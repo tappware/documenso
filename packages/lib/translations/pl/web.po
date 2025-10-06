@@ -1356,6 +1356,7 @@ msgstr "Wystąpił błąd podczas podpisywania jako asystent."
 
 #: apps/remix/app/components/general/document-signing/document-signing-text-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-signature-field.tsx
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-radio-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-number-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-name-field.tsx
@@ -1487,11 +1488,6 @@ msgstr "Tokeny API"
 msgid "App Version"
 msgstr "Wersja aplikacji"
 
-#: packages/lib/constants/recipient-roles.ts
-msgctxt "Recipient role action verb"
-msgid "Approve"
-msgstr ""
-
 #: apps/remix/app/components/tables/inbox-table.tsx
 #: apps/remix/app/components/tables/documents-table-action-dropdown.tsx
 #: apps/remix/app/components/tables/documents-table-action-button.tsx
@@ -1501,19 +1497,24 @@ msgstr ""
 msgid "Approve"
 msgstr "Zatwierdź"
 
+#: packages/lib/constants/recipient-roles.ts
+msgctxt "Recipient role action verb"
+msgid "Approve"
+msgstr ""
+
 #: apps/remix/app/components/general/document-signing/document-signing-page-view.tsx
 #: packages/email/template-components/template-document-invite.tsx
 msgid "Approve Document"
 msgstr "Zatwierdź dokument"
 
+#: apps/remix/app/components/general/document/document-page-view-recipients.tsx
+msgid "Approved"
+msgstr "Zatwierdził"
+
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role actioned"
 msgid "Approved"
 msgstr ""
-
-#: apps/remix/app/components/general/document/document-page-view-recipients.tsx
-msgid "Approved"
-msgstr "Zatwierdził"
 
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role name"
@@ -1616,14 +1617,14 @@ msgstr ""
 msgid "Assistants and Copy roles are currently not compatible with the multi-sign experience."
 msgstr "Asystenci i role Kopii są obecnie niekompatybilne z doświadczeniem multi-sign."
 
+#: apps/remix/app/components/general/document/document-page-view-recipients.tsx
+msgid "Assisted"
+msgstr "Przygotował"
+
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role actioned"
 msgid "Assisted"
 msgstr ""
-
-#: apps/remix/app/components/general/document/document-page-view-recipients.tsx
-msgid "Assisted"
-msgstr "Przygotował"
 
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role progressive verb"
@@ -3043,15 +3044,15 @@ msgstr "Dokument zatwierdzony"
 msgid "Document Cancelled"
 msgstr "Dokument anulowany"
 
+#: apps/remix/app/components/general/document/document-status.tsx
+msgid "Document completed"
+msgstr "Zakończono dokument"
+
 #: packages/lib/utils/document-audit-logs.ts
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document completed"
 msgstr ""
-
-#: apps/remix/app/components/general/document/document-status.tsx
-msgid "Document completed"
-msgstr "Zakończono dokument"
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 #: packages/ui/components/document/document-email-checkboxes.tsx
@@ -3062,14 +3063,14 @@ msgstr "Wiadomość potwierdzająca zakończenie"
 msgid "Document Completed!"
 msgstr "Dokument Zakończony!"
 
+#: apps/remix/app/components/dialogs/template-use-dialog.tsx
+msgid "Document created"
+msgstr "Utworzono dokument"
+
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document created"
 msgstr ""
-
-#: apps/remix/app/components/dialogs/template-use-dialog.tsx
-msgid "Document created"
-msgstr "Utworzono dokument"
 
 #: apps/remix/app/routes/embed+/v1+/authoring_.completed.create.tsx
 msgid "Document Created"
@@ -3093,16 +3094,16 @@ msgstr "Dokument utworzony za pomocą <0>bezpośredniego linku</0>"
 msgid "Document Creation"
 msgstr "Tworzenie dokumentu"
 
-#: packages/lib/utils/document-audit-logs.ts
-msgctxt "Audit log format"
-msgid "Document deleted"
-msgstr ""
-
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/documents.$id._index.tsx
 #: apps/remix/app/components/dialogs/document-delete-dialog.tsx
 #: apps/remix/app/components/dialogs/admin-document-delete-dialog.tsx
 msgid "Document deleted"
 msgstr "Usunięto dokument"
+
+#: packages/lib/utils/document-audit-logs.ts
+msgctxt "Audit log format"
+msgid "Document deleted"
+msgstr ""
 
 #: packages/ui/components/document/document-email-checkboxes.tsx
 msgid "Document deleted email"
@@ -3214,14 +3215,14 @@ msgstr "Dokument odrzucone"
 msgid "Document resealed"
 msgstr "Dokument ponownie zaplombowany"
 
+#: apps/remix/app/components/general/document/document-edit-form.tsx
+msgid "Document sent"
+msgstr "Wysłano dokument"
+
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document sent"
 msgstr ""
-
-#: apps/remix/app/components/general/document/document-edit-form.tsx
-msgid "Document sent"
-msgstr "Wysłano dokument"
 
 #: apps/remix/app/routes/_recipient+/sign.$token+/complete.tsx
 msgid "Document Signed"
@@ -3398,14 +3399,14 @@ msgstr "Przeciągnij i upuść lub kliknij, aby przesłać"
 msgid "Drag and drop your PDF file here"
 msgstr "Przeciągnij i upuść swój plik PDF tutaj"
 
+#: packages/ui/primitives/signature-pad/signature-pad.tsx
+msgid "Draw"
+msgstr "Rysowany"
+
 #: packages/lib/constants/document.ts
 msgctxt "Draw signatute type"
 msgid "Draw"
 msgstr ""
-
-#: packages/ui/primitives/signature-pad/signature-pad.tsx
-msgid "Draw"
-msgstr "Rysowany"
 
 #: apps/remix/app/components/embed/authoring/configure-document-upload.tsx
 msgid "Drop your document here"
@@ -3735,6 +3736,8 @@ msgstr "Enterprise"
 #: apps/remix/app/components/general/document-signing/document-signing-signature-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-signature-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-signature-field.tsx
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-radio-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-radio-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-number-field.tsx
@@ -4355,6 +4358,10 @@ msgstr "Dołącz dzienniki audytu do dokumentu"
 #: apps/remix/app/components/forms/document-preferences-form.tsx
 msgid "Include the Signing Certificate in the Document"
 msgstr "Dołącz certyfikat podpisu do dokumentu"
+
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "Info"
+msgstr ""
 
 #: apps/remix/app/components/general/template/template-page-view-information.tsx
 #: apps/remix/app/components/general/document/document-page-view-information.tsx
@@ -5120,6 +5127,10 @@ msgstr "Brak wyników."
 msgid "No signature field found"
 msgstr "Nie znaleziono pola podpisu"
 
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "No signature fields to sign."
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/admin+/organisations.$id.tsx
 msgid "No Stripe customer attached"
 msgstr "Brak powiązanego klienta Stripe"
@@ -5447,6 +5458,10 @@ msgstr "Strona {0} z {1}"
 msgid "Page {0} of {numPages}"
 msgstr "Strona {0} z {numPages}"
 
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "Partial Success"
+msgstr ""
+
 #: apps/remix/app/components/general/document-signing/document-signing-auth-dialog.tsx
 #: apps/remix/app/components/forms/signin.tsx
 msgid "Passkey"
@@ -5714,6 +5729,10 @@ msgstr "Proszę podać token z aplikacji uwierzytelniającej lub kod zapasowy. J
 #: apps/remix/app/components/forms/2fa/view-recovery-codes-dialog.tsx
 msgid "Please provide a token from your authenticator, or a backup code."
 msgstr "Proszę podać token z Twojego uwierzytelniacza lub kod zapasowy."
+
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "Please provide your signature first."
+msgstr ""
 
 #: apps/remix/app/components/general/document-signing/document-signing-page-view.tsx
 msgid "Please review the document before approving."
@@ -6609,11 +6628,6 @@ msgstr "Pokaż ustawienia zaawansowane"
 msgid "Show templates in your public profile for your audience to sign and get started quickly"
 msgstr "Pokaż szablony w profilu publicznym, aby szybko podpisać dokument"
 
-#: packages/lib/constants/recipient-roles.ts
-msgctxt "Recipient role action verb"
-msgid "Sign"
-msgstr ""
-
 #: apps/remix/app/routes/_profile+/p.$url.tsx
 #: apps/remix/app/components/tables/inbox-table.tsx
 #: apps/remix/app/components/tables/documents-table-action-dropdown.tsx
@@ -6629,6 +6643,16 @@ msgstr ""
 #: apps/remix/app/components/general/document/document-page-view-button.tsx
 msgid "Sign"
 msgstr "Podpisz"
+
+#: packages/lib/constants/recipient-roles.ts
+msgctxt "Recipient role action verb"
+msgid "Sign"
+msgstr ""
+
+#. placeholder {0}: unsignedSignatureFields.length
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "Sign All Pages ({0})"
+msgstr ""
 
 #. placeholder {0}: recipient.name
 #. placeholder {1}: recipient.email
@@ -6742,16 +6766,16 @@ msgstr "Zebrane podpisy"
 msgid "Signatures will appear once the document has been completed"
 msgstr "Podpisy pojawią się po ukończeniu dokumentu"
 
-#: packages/lib/constants/recipient-roles.ts
-msgctxt "Recipient role actioned"
-msgid "Signed"
-msgstr ""
-
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
 #: packages/ui/components/document/document-read-only-fields.tsx
 msgid "Signed"
 msgstr "Podpisał"
+
+#: packages/lib/constants/recipient-roles.ts
+msgctxt "Recipient role actioned"
+msgid "Signed"
+msgstr ""
 
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role name"
@@ -7043,6 +7067,7 @@ msgstr "Subskrypcja nieważna"
 #: apps/remix/app/components/general/teams/team-email-dropdown.tsx
 #: apps/remix/app/components/general/organisations/organisation-invitations.tsx
 #: apps/remix/app/components/general/organisations/organisation-invitations.tsx
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
 #: apps/remix/app/components/forms/team-update-form.tsx
 #: apps/remix/app/components/forms/public-profile-form.tsx
 #: apps/remix/app/components/forms/organisation-update-form.tsx
@@ -7085,6 +7110,17 @@ msgstr "Pomyślnie utworzono klucz uwierzytelniający"
 #: packages/email/templates/bulk-send-complete.tsx
 msgid "Successfully created: {successCount}"
 msgstr "Pomyślnie utworzono: {successCount}"
+
+#. placeholder {0}: unsignedSignatureFields.length - failedSignatures.length
+#. placeholder {1}: unsignedSignatureFields.length
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "Successfully signed {0} of {1} signature fields. Some fields may need to be signed manually."
+msgstr ""
+
+#. placeholder {0}: unsignedSignatureFields.length
+#: apps/remix/app/components/general/document-signing/document-signing-sign-all-button.tsx
+msgid "Successfully signed all {0} signature fields."
+msgstr ""
 
 #: packages/email/templates/bulk-send-complete.tsx
 msgid "Summary:"
@@ -7966,6 +8002,10 @@ msgstr "Strefa czasowa"
 msgid "Time Zone"
 msgstr "Strefa czasowa"
 
+#: apps/remix/app/components/forms/organisation-update-form.tsx
+msgid "TIN"
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/admin+/documents._index.tsx
 #: apps/remix/app/components/tables/templates-table.tsx
 #: apps/remix/app/components/tables/inbox-table.tsx
@@ -8128,16 +8168,16 @@ msgstr "Uwierzytelnianie dwuetapowe zostało wyłączone dla Twojego konta. Nie 
 msgid "Two-Factor Re-Authentication"
 msgstr "Ponowna autoryzacja za pomocą dwuetapowej weryfikacji"
 
-#: packages/lib/constants/document.ts
-msgctxt "Type signatute type"
-msgid "Type"
-msgstr ""
-
 #: apps/remix/app/components/tables/templates-table.tsx
 #: apps/remix/app/components/tables/admin-document-recipient-item-table.tsx
 #: packages/ui/primitives/signature-pad/signature-pad.tsx
 msgid "Type"
 msgstr "Typ"
+
+#: packages/lib/constants/document.ts
+msgctxt "Type signatute type"
+msgid "Type"
+msgstr ""
 
 #: apps/remix/app/components/general/app-command-menu.tsx
 msgid "Type a command or search..."
@@ -8418,14 +8458,14 @@ msgstr "Ulepsz <0>{0}</0> do {planName}"
 msgid "Upgrade your plan to upload more documents"
 msgstr "Zaktualizuj swój plan, aby przesłać więcej dokumentów"
 
+#: packages/ui/primitives/signature-pad/signature-pad.tsx
+msgid "Upload"
+msgstr "Przesłany"
+
 #: packages/lib/constants/document.ts
 msgctxt "Upload signatute type"
 msgid "Upload"
 msgstr ""
-
-#: packages/ui/primitives/signature-pad/signature-pad.tsx
-msgid "Upload"
-msgstr "Przesłany"
 
 #: apps/remix/app/components/dialogs/template-bulk-send-dialog.tsx
 msgid "Upload a CSV file to create multiple documents from this template. Each row represents one document with its recipient details."
@@ -8617,11 +8657,6 @@ msgstr "Zweryfikuj adres e-mail zespołu"
 msgid "Vertical"
 msgstr "Pionowo"
 
-#: packages/lib/constants/recipient-roles.ts
-msgctxt "Recipient role action verb"
-msgid "View"
-msgstr ""
-
 #: apps/remix/app/components/tables/organisation-billing-invoices-table.tsx
 #: apps/remix/app/components/tables/inbox-table.tsx
 #: apps/remix/app/components/tables/inbox-table.tsx
@@ -8633,6 +8668,11 @@ msgstr ""
 #: apps/remix/app/components/embed/multisign/multi-sign-document-list.tsx
 msgid "View"
 msgstr "Widok"
+
+#: packages/lib/constants/recipient-roles.ts
+msgctxt "Recipient role action verb"
+msgid "View"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/settings+/security._index.tsx
 msgid "View activity"
@@ -8730,16 +8770,16 @@ msgstr "Wyświetl zespoły"
 msgid "View the DNS records for this email domain"
 msgstr "Zobacz rekordy DNS dla tej domeny e-mail"
 
-#: packages/lib/constants/recipient-roles.ts
-msgctxt "Recipient role actioned"
-msgid "Viewed"
-msgstr ""
-
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
 #: apps/remix/app/components/embed/multisign/multi-sign-document-list.tsx
 msgid "Viewed"
 msgstr "Wyświetlono"
+
+#: packages/lib/constants/recipient-roles.ts
+msgctxt "Recipient role actioned"
+msgid "Viewed"
+msgstr ""
 
 #: packages/lib/constants/recipient-roles.ts
 msgctxt "Recipient role name"

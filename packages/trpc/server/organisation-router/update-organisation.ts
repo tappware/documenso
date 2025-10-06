@@ -46,6 +46,7 @@ export const updateOrganisationRoute = authenticatedProcedure
       data: {
         name: data.name,
         url: data.url,
+        tin_number: data.tin_number || null,
       },
     });
 

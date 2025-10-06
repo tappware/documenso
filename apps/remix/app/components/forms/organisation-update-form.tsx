@@ -28,6 +28,7 @@ import { useToast } from '@documenso/ui/primitives/use-toast';
 const ZOrganisationUpdateFormSchema = ZUpdateOrganisationRequestSchema.shape.data.pick({
   name: true,
   url: true,
+  tin_number: true,
 });
 
 type TOrganisationUpdateFormSchema = z.infer<typeof ZOrganisationUpdateFormSchema>;
@@ -46,17 +47,19 @@ export const OrganisationUpdateForm = () => {
     defaultValues: {
       name: organisation.name,
       url: organisation.url,
+      tin_number: organisation.tin_number || '',
     },
   });
 
   const { mutateAsync: updateOrganisation } = trpc.organisation.update.useMutation();
 
-  const onFormSubmit = async ({ name, url }: TOrganisationUpdateFormSchema) => {
+  const onFormSubmit = async ({ name, url, tin_number }: TOrganisationUpdateFormSchema) => {
     try {
       await updateOrganisation({
         data: {
           name,
           url,
+          tin_number,
         },
         organisationId: organisation.id,
       });
@@ -76,6 +79,7 @@ export const OrganisationUpdateForm = () => {
       form.reset({
         name,
         url,
+        tin_number,
       });
     } catch (err) {
       const error = AppError.parseError(err);
@@ -140,6 +144,22 @@ export const OrganisationUpdateForm = () => {
                   </span>
                 )}
 
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+
+          <FormField
+            control={form.control}
+            name="tin_number"
+            render={({ field }) => (
+              <FormItem className="mb-4 mt-4">
+                <FormLabel>
+                  <Trans>TIN</Trans>
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="1234567890" className="bg-background" {...field} />
+                </FormControl>
                 <FormMessage />
               </FormItem>
             )}

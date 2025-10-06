@@ -1,4 +1,4 @@
-import { useId, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
@@ -26,6 +26,7 @@ import {
 } from '../../dialogs/assistant-confirmation-dialog';
 import { DocumentSigningCompleteDialog } from './document-signing-complete-dialog';
 import { useRequiredDocumentSigningContext } from './document-signing-provider';
+import { DocumentSigningSignAllButton } from './document-signing-sign-all-button';
 
 export type DocumentSigningFormProps = {
   document: DocumentAndSender;
@@ -59,7 +60,7 @@ export const DocumentSigningForm = ({
   const { toast } = useToast();
   const navigate = useNavigate();
 
-  const assistantSignersId = useId();
+  const assistantSignersId = `assistant-signers-${recipient.id}`;
 
   const { fullName, signature, setFullName, setSignature } = useRequiredDocumentSigningContext();
 
@@ -285,6 +286,16 @@ export const DocumentSigningForm = ({
                         typedSignatureEnabled={document.documentMeta?.typedSignatureEnabled}
                         uploadSignatureEnabled={document.documentMeta?.uploadSignatureEnabled}
                         drawSignatureEnabled={document.documentMeta?.drawSignatureEnabled}
+                      />
+                    </div>
+                  )}
+
+                  {hasSignatureField && (
+                    <div className="mt-4">
+                      <DocumentSigningSignAllButton
+                        recipient={recipient}
+                        fields={fields}
+                        disabled={isSubmitting}
                       />
                     </div>
                   )}
