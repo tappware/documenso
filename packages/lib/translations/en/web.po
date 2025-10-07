@@ -2238,7 +2238,7 @@ msgstr "Contact Information"
 msgid "Contact sales here"
 msgstr "Contact sales here"
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Contact us"
 msgstr "Contact us"
 
@@ -2396,7 +2396,7 @@ msgstr "Create a new email address for your organisation using the domain <0>{0}
 msgid "Create a new organisation with {planName} plan. Keep your current organisation on it's current plan"
 msgstr "Create a new organisation with {planName} plan. Keep your current organisation on it's current plan"
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Create a support ticket"
 msgstr "Create a support ticket"
 
@@ -2949,7 +2949,7 @@ msgstr "Disabling direct link signing will prevent anyone from accessing the lin
 msgid "Disabling the user results in the user not being able to use the account. It also disables all the related contents such as subscription, webhooks, teams, and API keys."
 msgstr "Disabling the user results in the user not being able to use the account. It also disables all the related contents such as subscription, webhooks, teams, and API keys."
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Discord"
 msgstr "Discord"
 
@@ -3281,7 +3281,7 @@ msgstr "Document visibility updated"
 msgid "Document will be permanently deleted"
 msgstr "Document will be permanently deleted"
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Documentation"
 msgstr "Documentation"
 
@@ -4524,7 +4524,7 @@ msgstr "It's currently not your turn to sign. You will receive an email with ins
 msgid "Join {organisationName} on Documenso"
 msgstr "Join {organisationName} on Documenso"
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Join our community on <0>Discord</0> for community support and discussion."
 msgstr "Join our community on <0>Discord</0> for community support and discussion."
 
@@ -5045,6 +5045,10 @@ msgstr "Next"
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 msgid "Next field"
 msgstr "Next field"
+
+#: apps/remix/app/components/forms/organisation-update-form.tsx
+msgid "NID"
+msgstr "NID"
 
 #: apps/remix/app/components/forms/document-preferences-form.tsx
 #: apps/remix/app/components/forms/document-preferences-form.tsx
@@ -5877,7 +5881,7 @@ msgstr "Radio values"
 msgid "Read only"
 msgstr "Read only"
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Read our documentation to get started with Documenso."
 msgstr "Read our documentation to get started with Documenso."
 
@@ -7121,8 +7125,7 @@ msgstr "Successfully signed all {0} signature fields."
 msgid "Summary:"
 msgstr "Summary:"
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
-#: apps/remix/app/components/general/org-menu-switcher.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Support"
 msgstr "Support"
 
@@ -7860,9 +7863,10 @@ msgstr "This document was created by you or a team member using the template abo
 msgid "This document was created using a direct link."
 msgstr "This document was created using a direct link."
 
+#. placeholder {0}: NEXT_APP_NAME()
 #: packages/email/template-components/template-footer.tsx
-msgid "This document was sent using <0>Documenso.</0>"
-msgstr "This document was sent using <0>Documenso.</0>"
+msgid "This document was sent using <0>`${0}`.</0>"
+msgstr "This document was sent using <0>`${0}`.</0>"
 
 #: packages/email/template-components/template-document-rejection-confirmed.tsx
 msgid "This email confirms that you have rejected the document <0>\"{documentName}\"</0> sent by {documentOwnerName}."
@@ -8012,10 +8016,6 @@ msgstr "Time zone"
 #: packages/ui/primitives/document-flow/add-settings.tsx
 msgid "Time Zone"
 msgstr "Time Zone"
-
-#: apps/remix/app/components/forms/organisation-update-form.tsx
-msgid "TIN"
-msgstr "TIN"
 
 #: apps/remix/app/routes/_authenticated+/admin+/documents._index.tsx
 #: apps/remix/app/components/tables/templates-table.tsx
@@ -9127,7 +9127,7 @@ msgstr "We will generate signing links for you, which you can send to the recipi
 msgid "We won't send anything to notify recipients."
 msgstr "We won't send anything to notify recipients."
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "We'll get back to you as soon as possible via email."
 msgstr "We'll get back to you as soon as possible via email."
 
@@ -9193,8 +9193,8 @@ msgid "Welcome to {organisationName}"
 msgstr "Welcome to {organisationName}"
 
 #: packages/email/template-components/template-confirmation-email.tsx
-msgid "Welcome to Documenso!"
-msgstr "Welcome to Documenso!"
+msgid "Welcome to Doxigner!"
+msgstr "Welcome to Doxigner!"
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.sso.tsx
 msgid "Well-known URL is required"
@@ -9718,7 +9718,7 @@ msgstr "Your bulk send operation for template \"{templateName}\" has completed."
 msgid "Your current {currentProductName} plan is past due. Please update your payment information."
 msgstr "Your current {currentProductName} plan is past due. Please update your payment information."
 
-#: apps/remix/app/routes/_authenticated+/o.$orgUrl.support.tsx
+#: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Your current plan includes the following support channels:"
 msgstr "Your current plan includes the following support channels:"
 

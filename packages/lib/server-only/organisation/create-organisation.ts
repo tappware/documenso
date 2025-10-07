@@ -20,6 +20,7 @@ type CreateOrganisationOptions = {
   name: string;
   type: OrganisationType;
   url?: string;
+  nid?: string;
   customerId?: string;
   claim: InternalClaim;
 };
@@ -29,6 +30,7 @@ export const createOrganisation = async ({
   url,
   type,
   userId,
+  nid,
   customerId,
   claim,
 }: CreateOrganisationOptions) => {
@@ -94,6 +96,7 @@ export const createOrganisation = async ({
           name,
           type,
           url: url || orgIdAndUrl,
+          nid: nid || null,
           ownerUserId: userId,
           organisationGlobalSettingsId: organisationSetting.id,
           organisationClaimId: organisationClaim.id,

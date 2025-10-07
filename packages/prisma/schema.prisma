@@ -612,7 +612,7 @@ model Organisation {
   type          OrganisationType
   name          String
   url           String           @unique
-  tin_number    String?
+  nid           String?
   avatarImageId String?
 
   customerId   String?       @unique

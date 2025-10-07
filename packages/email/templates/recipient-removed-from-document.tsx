@@ -2,6 +2,8 @@ import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
 
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
+
 import { Body, Container, Head, Hr, Html, Img, Preview, Section, Text } from '../components';
 import { useBranding } from '../providers/branding';
 import type { TemplateDocumentCancelProps } from '../template-components/template-document-cancel';
@@ -38,7 +40,7 @@ export const RecipientRemovedFromDocumentTemplate = ({
               ) : (
                 <Img
                   src={getAssetUrl('/static/logo.png')}
-                  alt="Documenso Logo"
+                  alt={`${NEXT_APP_NAME()} Logo`}
                   className="mb-4 h-6"
                 />
               )}

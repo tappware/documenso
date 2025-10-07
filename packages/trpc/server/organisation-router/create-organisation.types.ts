@@ -17,7 +17,7 @@ export const ZOrganisationNameSchema = z
 
 export const ZCreateOrganisationRequestSchema = z.object({
   name: ZOrganisationNameSchema,
-  tin_number: z.string().optional(),
+  nid: z.string().optional(),
   priceId: z.string().optional(),
 });
 

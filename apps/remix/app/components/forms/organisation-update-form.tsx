@@ -28,7 +28,7 @@ import { useToast } from '@documenso/ui/primitives/use-toast';
 const ZOrganisationUpdateFormSchema = ZUpdateOrganisationRequestSchema.shape.data.pick({
   name: true,
   url: true,
-  tin_number: true,
+  nid: true,
 });
 
 type TOrganisationUpdateFormSchema = z.infer<typeof ZOrganisationUpdateFormSchema>;
@@ -47,19 +47,19 @@ export const OrganisationUpdateForm = () => {
     defaultValues: {
       name: organisation.name,
       url: organisation.url,
-      tin_number: organisation.tin_number || '',
+      nid: organisation.nid || '',
     },
   });
 
   const { mutateAsync: updateOrganisation } = trpc.organisation.update.useMutation();
 
-  const onFormSubmit = async ({ name, url, tin_number }: TOrganisationUpdateFormSchema) => {
+  const onFormSubmit = async ({ name, url, nid }: TOrganisationUpdateFormSchema) => {
     try {
       await updateOrganisation({
         data: {
           name,
           url,
-          tin_number,
+          nid,
         },
         organisationId: organisation.id,
       });
@@ -79,7 +79,7 @@ export const OrganisationUpdateForm = () => {
       form.reset({
         name,
         url,
-        tin_number,
+        nid,
       });
     } catch (err) {
       const error = AppError.parseError(err);
@@ -151,11 +151,11 @@ export const OrganisationUpdateForm = () => {
 
           <FormField
             control={form.control}
-            name="tin_number"
+            name="nid"
             render={({ field }) => (
               <FormItem className="mb-4 mt-4">
                 <FormLabel>
-                  <Trans>TIN</Trans>
+                  <Trans>NID</Trans>
                 </FormLabel>
                 <FormControl>
                   <Input placeholder="1234567890" className="bg-background" {...field} />

@@ -20,7 +20,7 @@ export const createOrganisationRoute = authenticatedProcedure
   .input(ZCreateOrganisationRequestSchema)
   .output(ZCreateOrganisationResponseSchema)
   .mutation(async ({ input, ctx }) => {
-    const { name, priceId } = input;
+    const { name, nid, priceId } = input;
     const { user } = ctx;
 
     ctx.logger.info({
@@ -75,6 +75,7 @@ export const createOrganisationRoute = authenticatedProcedure
     await createOrganisation({
       userId: user.id,
       name,
+      nid,
       type: organisationType,
       claim: internalClaims[INTERNAL_CLAIM_ID.FREE],
     });

@@ -1,6 +1,8 @@
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
+
 import { Body, Container, Head, Html, Img, Preview, Section } from '../components';
 import { useBranding } from '../providers/branding';
 import { TemplateDocumentRecipientSigned } from '../template-components/template-document-recipient-signed';
@@ -44,7 +46,7 @@ export const DocumentRecipientSignedEmailTemplate = ({
               ) : (
                 <Img
                   src={getAssetUrl('/static/logo.png')}
-                  alt="Documenso Logo"
+                  alt={`${NEXT_APP_NAME()} Logo`}
                   className="mb-4 h-6"
                 />
               )}

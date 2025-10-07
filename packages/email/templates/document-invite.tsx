@@ -4,6 +4,7 @@ import { Trans } from '@lingui/react/macro';
 import type { RecipientRole } from '@prisma/client';
 import { OrganisationType } from '@prisma/client';
 
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
 import { RECIPIENT_ROLES_DESCRIPTION } from '@documenso/lib/constants/recipient-roles';
 
 import { Body, Container, Head, Hr, Html, Img, Link, Preview, Section, Text } from '../components';
@@ -70,7 +71,7 @@ export const DocumentInviteEmailTemplate = ({
               ) : (
                 <Img
                   src={getAssetUrl('/static/logo.png')}
-                  alt="Documenso Logo"
+                  alt={`${NEXT_APP_NAME()} Logo`}
                   className="mb-4 h-6"
                 />
               )}

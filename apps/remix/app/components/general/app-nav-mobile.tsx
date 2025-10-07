@@ -8,6 +8,7 @@ import { Link } from 'react-router';
 import LogoImage from '@documenso/assets/logo.png';
 import { authClient } from '@documenso/auth/client';
 import { useSession } from '@documenso/lib/client-only/providers/session';
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
 import { isPersonalLayout } from '@documenso/lib/utils/organisations';
 import { trpc } from '@documenso/trpc/react';
 import { Sheet, SheetContent } from '@documenso/ui/primitives/sheet';
@@ -86,7 +87,7 @@ export const AppNavMobile = ({ isMenuOpen, onMenuOpenChange }: AppNavMobileProps
         <Link to="/" onClick={handleMenuItemClick}>
           <img
             src={LogoImage}
-            alt="Documenso Logo"
+            alt={`${NEXT_APP_NAME()} Logo`}
             className="dark:invert"
             width={170}
             height={25}
@@ -124,7 +125,7 @@ export const AppNavMobile = ({ isMenuOpen, onMenuOpenChange }: AppNavMobileProps
           </div>
 
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Documenso, Inc. <br /> All rights reserved.
+            © {new Date().getFullYear()} `${NEXT_APP_NAME()}`, Inc. <br /> All rights reserved.
           </p>
         </div>
       </SheetContent>

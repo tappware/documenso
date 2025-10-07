@@ -16,7 +16,7 @@ import { ZCreateOrganisationRequestSchema } from './create-organisation.types';
 export const ZUpdateOrganisationRequestSchema = z.object({
   data: ZCreateOrganisationRequestSchema.pick({
     name: true,
-    tin_number: true,
+    nid: true,
   }).extend({
     url: ZTeamUrlSchema,
   }),

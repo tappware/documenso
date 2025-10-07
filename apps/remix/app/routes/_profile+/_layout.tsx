@@ -8,6 +8,7 @@ import { Link, Outlet, isRouteErrorResponse } from 'react-router';
 
 import LogoIcon from '@documenso/assets/logo_icon.png';
 import { useOptionalSession } from '@documenso/lib/client-only/providers/session';
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
 import { cn } from '@documenso/ui/lib/utils';
 import { Button } from '@documenso/ui/primitives/button';
 
@@ -57,7 +58,7 @@ export default function PublicProfileLayout() {
 
               <img
                 src={LogoIcon}
-                alt="Documenso Logo"
+                alt={`${NEXT_APP_NAME()} Logo`}
                 width={48}
                 height={48}
                 className="h-10 w-auto sm:hidden dark:invert"

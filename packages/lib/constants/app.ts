@@ -14,3 +14,11 @@ export const IS_BILLING_ENABLED = () => env('NEXT_PUBLIC_FEATURE_BILLING_ENABLED
 export const API_V2_BETA_URL = '/api/v2-beta';
 
 export const SUPPORT_EMAIL = env('NEXT_PUBLIC_SUPPORT_EMAIL') ?? 'support@documenso.com';
+
+export const NEXT_APP_NAME = () => env('NEXT_APP_NAME') ?? 'Doxigner';
+
+export const NEXT_APP_AUTHOR_NAME = () => env('NEXT_APP_AUTHOR_NAME') ?? 'Doxigner Ltd';
+
+export const NEXT_APP_AUTHOR_ADDRESS = () =>
+  env('NEXT_APP_AUTHOR_ADDRESS') ??
+  'SEL Trident Tower ( Level-14th Floor) 57,Purana Paltan Line, Kakrail, Dhaka 1000, Bangladesh';

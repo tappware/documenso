@@ -1,5 +1,9 @@
 import { Trans } from '@lingui/react/macro';
 
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
+import { NEXT_APP_AUTHOR_NAME } from '@documenso/lib/constants/app';
+import { NEXT_APP_AUTHOR_ADDRESS } from '@documenso/lib/constants/app';
+
 import { Link, Section, Text } from '../components';
 import { useBranding } from '../providers/branding';
 
@@ -17,7 +21,7 @@ export const TemplateFooter = ({ isDocument = true }: TemplateFooterProps) => {
           <Trans>
             This document was sent using{' '}
             <Link className="text-[#7AC455]" href="https://documen.so/mail-footer">
-              Documenso.
+              `${NEXT_APP_NAME()}`.
             </Link>
           </Trans>
         </Text>
@@ -36,9 +40,9 @@ export const TemplateFooter = ({ isDocument = true }: TemplateFooterProps) => {
         </Text>
       ) : (
         <Text className="my-8 text-sm text-slate-400">
-          Documenso, Inc.
+          {NEXT_APP_AUTHOR_NAME()}
           <br />
-          2261 Market Street, #5211, San Francisco, CA 94114, USA
+          {NEXT_APP_AUTHOR_ADDRESS()}
         </Text>
       )}
     </Section>
