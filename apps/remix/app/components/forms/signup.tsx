@@ -14,6 +14,7 @@ import { z } from 'zod';
 import communityCardsImage from '@documenso/assets/images/community-cards.png';
 import { authClient } from '@documenso/auth/client';
 import { useAnalytics } from '@documenso/lib/client-only/hooks/use-analytics';
+import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
 import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
 import { ZPasswordSchema } from '@documenso/trpc/server/auth-router/schema';
 import { cn } from '@documenso/ui/lib/utils';
@@ -370,7 +371,7 @@ export const SignUpForm = ({
           <Trans>
             By proceeding, you agree to our{' '}
             <Link
-              to="https://documen.so/terms"
+              to={`${NEXT_PUBLIC_WEBAPP_URL()}/terms`}
               target="_blank"
               className="text-documenso-700 duration-200 hover:opacity-70"
             >
@@ -378,7 +379,7 @@ export const SignUpForm = ({
             </Link>{' '}
             and{' '}
             <Link
-              to="https://documen.so/privacy"
+              to={`${NEXT_PUBLIC_WEBAPP_URL()}/privacy`}
               target="_blank"
               className="text-documenso-700 duration-200 hover:opacity-70"
             >
