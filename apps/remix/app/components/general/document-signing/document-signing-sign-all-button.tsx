@@ -9,7 +9,16 @@ import { useRevalidator } from 'react-router';
 
 import { AppError, AppErrorCode } from '@documenso/lib/errors/app-error';
 import { trpc } from '@documenso/trpc/react';
+import { Alert, AlertDescription } from '@documenso/ui/primitives/alert';
 import { Button } from '@documenso/ui/primitives/button';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@documenso/ui/primitives/dialog';
 import { useToast } from '@documenso/ui/primitives/use-toast';
 
 import { useRequiredDocumentSigningAuthContext } from './document-signing-auth-provider';
@@ -34,6 +43,7 @@ export const DocumentSigningSignAllButton = ({
   const { executeActionAuthProcedure } = useRequiredDocumentSigningAuthContext();
 
   const [isSigning, setIsSigning] = useState(false);
+  const [isConfirmDialogOpen, setIsConfirmDialogOpen] = useState(false);
 
   const { mutateAsync: signFieldWithToken } = trpc.field.signFieldWithToken.useMutation();
 
@@ -64,15 +74,8 @@ export const DocumentSigningSignAllButton = ({
       return;
     }
 
-    // Show confirmation dialog
-    const confirmed = window.confirm(
-      `You are about to sign all ${unsignedSignatureFields.length} signature fields in this document with your current signature. This action cannot be undone.\n\nDo you want to continue?`,
-    );
-
-    if (!confirmed) {
-      return;
-    }
-
+    // Close dialog and start signing
+    setIsConfirmDialogOpen(false);
     setIsSigning(true);
 
     try {
@@ -133,6 +136,10 @@ export const DocumentSigningSignAllButton = ({
     }
   };
 
+  const handleConfirmClick = () => {
+    setIsConfirmDialogOpen(true);
+  };
+
   const handleSignAllWithAuth = async () => {
     await executeActionAuthProcedure({
       onReauthFormSubmit: handleSignAll,
@@ -145,16 +152,64 @@ export const DocumentSigningSignAllButton = ({
   }
 
   return (
-    <Button
-      type="button"
-      variant="destructive"
-      size="lg"
-      disabled={disabled || !providedSignature}
-      onClick={handleSignAllWithAuth}
-      loading={isSigning}
-      className="w-full"
-    >
-      <Trans>Sign All Pages ({unsignedSignatureFields.length})</Trans>
-    </Button>
+    <>
+      <Button
+        type="button"
+        variant="destructive"
+        size="lg"
+        disabled={disabled || !providedSignature}
+        onClick={handleConfirmClick}
+        loading={isSigning}
+        className="w-full"
+      >
+        <Trans>Sign All Pages ({unsignedSignatureFields.length})</Trans>
+      </Button>
+
+      <Dialog open={isConfirmDialogOpen} onOpenChange={setIsConfirmDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>
+              <Trans>Sign All Pages</Trans>
+            </DialogTitle>
+
+            <DialogDescription>
+              <Trans>
+                You are about to sign all {unsignedSignatureFields.length} signature fields in this
+                document with your current signature.
+              </Trans>
+            </DialogDescription>
+          </DialogHeader>
+
+          <Alert variant="warning">
+            <AlertDescription>
+              <Trans>
+                This action <strong>cannot be undone</strong>. All signature fields will be filled
+                with your current signature.
+              </Trans>
+            </AlertDescription>
+          </Alert>
+
+          <DialogFooter>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => setIsConfirmDialogOpen(false)}
+              disabled={isSigning}
+            >
+              <Trans>Cancel</Trans>
+            </Button>
+
+            <Button
+              type="button"
+              variant="destructive"
+              onClick={handleSignAllWithAuth}
+              loading={isSigning}
+            >
+              <Trans>Confirm & Sign All</Trans>
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };

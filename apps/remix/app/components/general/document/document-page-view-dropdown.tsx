@@ -5,16 +5,7 @@ import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
 import type { Document, Recipient, Team, User } from '@prisma/client';
 import { DocumentStatus } from '@prisma/client';
-import {
-  Copy,
-  Download,
-  Edit,
-  Loader,
-  MoreHorizontal,
-  ScrollTextIcon,
-  Share,
-  Trash2,
-} from 'lucide-react';
+import { Copy, Download, Edit, MoreHorizontal, ScrollTextIcon, Trash2 } from 'lucide-react';
 import { Link, useNavigate } from 'react-router';
 
 import { downloadPDF } from '@documenso/lib/client-only/download-pdf';
@@ -22,7 +13,6 @@ import { useSession } from '@documenso/lib/client-only/providers/session';
 import { isDocumentCompleted } from '@documenso/lib/utils/document';
 import { formatDocumentsPath } from '@documenso/lib/utils/teams';
 import { trpc as trpcClient } from '@documenso/trpc/client';
-import { DocumentShareButton } from '@documenso/ui/components/document/document-share-button';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -198,19 +188,6 @@ export const DocumentPageViewDropdown = ({ document }: DocumentPageViewDropdownP
         )}
 
         <DocumentResendDialog document={document} recipients={nonSignedRecipients} />
-
-        <DocumentShareButton
-          documentId={document.id}
-          token={isOwner ? undefined : recipient?.token}
-          trigger={({ loading, disabled }) => (
-            <DropdownMenuItem disabled={disabled || isDraft} onSelect={(e) => e.preventDefault()}>
-              <div className="flex items-center">
-                {loading ? <Loader className="mr-2 h-4 w-4" /> : <Share className="mr-2 h-4 w-4" />}
-                <Trans>Share Signing Card</Trans>
-              </div>
-            </DropdownMenuItem>
-          )}
-        />
       </DropdownMenuContent>
 
       <DocumentDeleteDialog

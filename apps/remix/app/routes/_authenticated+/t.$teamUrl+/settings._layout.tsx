@@ -1,14 +1,6 @@
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
-import {
-  BracesIcon,
-  Globe2Icon,
-  GroupIcon,
-  Settings2Icon,
-  SettingsIcon,
-  Users2Icon,
-  WebhookIcon,
-} from 'lucide-react';
+import { GroupIcon, Settings2Icon, SettingsIcon, Users2Icon } from 'lucide-react';
 import { Link, NavLink, Outlet, redirect } from 'react-router';
 
 import { getSession } from '@documenso/auth/server/lib/utils/get-session';
@@ -77,11 +69,6 @@ export default function TeamsSettingsLayout() {
       isSubNav: true,
     },
     {
-      path: `/t/${team.url}/settings/public-profile`,
-      label: t`Public Profile`,
-      icon: Globe2Icon,
-    },
-    {
       path: `/t/${team.url}/settings/members`,
       label: t`Members`,
       icon: Users2Icon,
@@ -90,16 +77,6 @@ export default function TeamsSettingsLayout() {
       path: `/t/${team.url}/settings/groups`,
       label: t`Groups`,
       icon: GroupIcon,
-    },
-    {
-      path: `/t/${team.url}/settings/tokens`,
-      label: t`API Tokens`,
-      icon: BracesIcon,
-    },
-    {
-      path: `/t/${team.url}/settings/webhooks`,
-      label: t`Webhooks`,
-      icon: WebhookIcon,
     },
   ];
 

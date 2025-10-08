@@ -1,16 +1,7 @@
 import type { HTMLAttributes } from 'react';
 
 import { Trans } from '@lingui/react/macro';
-import {
-  BracesIcon,
-  CreditCardIcon,
-  Globe2Icon,
-  Lock,
-  Settings2Icon,
-  User,
-  Users,
-  WebhookIcon,
-} from 'lucide-react';
+import { CreditCardIcon, Lock, Settings2Icon, User, Users } from 'lucide-react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router';
 
@@ -86,45 +77,6 @@ export const SettingsDesktopNav = ({ className, ...props }: SettingsDesktopNavPr
               )}
             >
               <Trans>Email</Trans>
-            </Button>
-          </Link>
-
-          <Link to="/settings/public-profile">
-            <Button
-              variant="ghost"
-              className={cn(
-                'w-full justify-start',
-                pathname?.startsWith('/settings/public-profile') && 'bg-secondary',
-              )}
-            >
-              <Globe2Icon className="mr-2 h-5 w-5" />
-              <Trans>Public Profile</Trans>
-            </Button>
-          </Link>
-
-          <Link to="/settings/tokens">
-            <Button
-              variant="ghost"
-              className={cn(
-                'w-full justify-start',
-                pathname?.startsWith('/settings/tokens') && 'bg-secondary',
-              )}
-            >
-              <BracesIcon className="mr-2 h-5 w-5" />
-              <Trans>API Tokens</Trans>
-            </Button>
-          </Link>
-
-          <Link to="/settings/webhooks">
-            <Button
-              variant="ghost"
-              className={cn(
-                'w-full justify-start',
-                pathname?.startsWith('/settings/webhooks') && 'bg-secondary',
-              )}
-            >
-              <WebhookIcon className="mr-2 h-5 w-5" />
-              <Trans>Webhooks</Trans>
             </Button>
           </Link>
 
