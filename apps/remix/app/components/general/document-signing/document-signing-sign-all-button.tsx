@@ -147,7 +147,7 @@ export const DocumentSigningSignAllButton = ({
   return (
     <Button
       type="button"
-      variant="outline"
+      variant="destructive"
       size="lg"
       disabled={disabled || !providedSignature}
       onClick={handleSignAllWithAuth}

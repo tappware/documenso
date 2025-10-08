@@ -7854,7 +7854,7 @@ msgstr "Ce document a été créé en utilisant un lien direct."
 
 #. placeholder {0}: NEXT_APP_NAME()
 #: packages/email/template-components/template-footer.tsx
-msgid "This document was sent using <0>`${0}`.</0>"
+msgid "This document was sent using `${0}`."
 msgstr ""
 
 #: packages/email/template-components/template-document-rejection-confirmed.tsx
@@ -9770,13 +9770,15 @@ msgstr "Vos préférences de document ont été mises à jour"
 msgid "Your documents"
 msgstr "Vos documents"
 
+#. placeholder {0}: NEXT_APP_NAME()
 #: apps/remix/app/routes/_unauthenticated+/verify-email.$token.tsx
-msgid "Your email has already been confirmed. You can now use all features of Documenso."
-msgstr "Votre email a déjà été confirmé. Vous pouvez maintenant utiliser toutes les fonctionnalités de Documenso."
+msgid "Your email has already been confirmed. You can now use all features of {0}."
+msgstr ""
 
+#. placeholder {0}: NEXT_APP_NAME()
 #: apps/remix/app/routes/_unauthenticated+/verify-email.$token.tsx
-msgid "Your email has been successfully confirmed! You can now use all features of Documenso."
-msgstr "Votre e-mail a été confirmé avec succès ! Vous pouvez maintenant utiliser toutes les fonctionnalités de Documenso."
+msgid "Your email has been successfully confirmed! You can now use all features of {0}."
+msgstr ""
 
 #. placeholder {0}: teamEmail.team.name
 #. placeholder {1}: teamEmail.team.url
