@@ -4,7 +4,7 @@ import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
 import { NEXT_APP_AUTHOR_NAME } from '@documenso/lib/constants/app';
 import { NEXT_APP_AUTHOR_ADDRESS } from '@documenso/lib/constants/app';
 
-import { Link, Section, Text } from '../components';
+import { Section, Text } from '../components';
 import { useBranding } from '../providers/branding';
 
 export type TemplateFooterProps = {
@@ -18,12 +18,7 @@ export const TemplateFooter = ({ isDocument = true }: TemplateFooterProps) => {
     <Section>
       {isDocument && !branding.brandingHidePoweredBy && (
         <Text className="my-4 text-base text-slate-400">
-          <Trans>
-            This document was sent using{' '}
-            <Link className="text-[#7AC455]" href="https://documen.so/mail-footer">
-              `${NEXT_APP_NAME()}`.
-            </Link>
-          </Trans>
+          <Trans>This document was sent using `${NEXT_APP_NAME()}`.</Trans>
         </Text>
       )}
 
