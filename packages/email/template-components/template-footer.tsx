@@ -18,7 +18,7 @@ export const TemplateFooter = ({ isDocument = true }: TemplateFooterProps) => {
     <Section>
       {isDocument && !branding.brandingHidePoweredBy && (
         <Text className="my-4 text-base text-slate-400">
-          <Trans>This document was sent using `${NEXT_APP_NAME()}`.</Trans>
+          <Trans>This document was sent using {NEXT_APP_NAME()}.</Trans>
         </Text>
       )}
 
