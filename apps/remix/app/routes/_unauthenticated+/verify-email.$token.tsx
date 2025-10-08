@@ -9,6 +9,7 @@ import { match } from 'ts-pattern';
 
 import { authClient } from '@documenso/auth/client';
 import { useOptionalSession } from '@documenso/lib/client-only/providers/session';
+import { NEXT_APP_NAME } from '@documenso/lib/constants/app';
 import { EMAIL_VERIFICATION_STATE } from '@documenso/lib/constants/email';
 import { Button } from '@documenso/ui/primitives/button';
 import { useToast } from '@documenso/ui/primitives/use-toast';
@@ -174,7 +175,8 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
 
             <p className="text-muted-foreground mt-4">
               <Trans>
-                Your email has already been confirmed. You can now use all features of Documenso.
+                Your email has already been confirmed. You can now use all features of{' '}
+                {NEXT_APP_NAME()}.
               </Trans>
             </p>
 
