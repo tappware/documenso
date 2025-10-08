@@ -175,7 +175,7 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
 
             <p className="text-muted-foreground mt-4">
               <Trans>
-                Your email has already been confirmed. You can now use all features of{' '}
+                Your email has already been confirmed. You can now use all features of $
                 {NEXT_APP_NAME()}.
               </Trans>
             </p>
