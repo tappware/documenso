@@ -9,6 +9,8 @@ import {
   rectangle,
 } from 'pdf-lib';
 
+import { env } from '@documenso/lib/utils/env';
+
 import { BYTE_RANGE_PLACEHOLDER } from '../constants/byte-range';
 
 export type AddSigningPlaceholderOptions = {
@@ -33,7 +35,7 @@ export const addSigningPlaceholder = async ({ pdf }: AddSigningPlaceholderOption
       SubFilter: 'adbe.pkcs7.detached',
       ByteRange: byteRange,
       Contents: PDFHexString.fromText(' '.repeat(8192)),
-      Reason: PDFString.of('Signed by Documenso'),
+      Reason: PDFString.of(`Signed by ${env('NEXT_APP_NAME')}`),
       M: PDFString.fromDate(new Date()),
     }),
   );

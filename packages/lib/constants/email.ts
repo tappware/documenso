@@ -1,14 +1,14 @@
 import { env } from '../utils/env';
 
-export const FROM_ADDRESS = env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@doxigner.com';
-export const FROM_NAME = env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Doxigner';
+export const FROM_ADDRESS = env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@Doxsigner.com';
+export const FROM_NAME = env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Doxsigner';
 
 export const DOCUMENSO_INTERNAL_EMAIL = {
   name: FROM_NAME,
   address: FROM_ADDRESS,
 };
 
-export const SERVICE_USER_EMAIL = 'serviceaccount@doxigner.com';
+export const SERVICE_USER_EMAIL = 'serviceaccount@Doxsigner.com';
 
 export const EMAIL_VERIFICATION_STATE = {
   NOT_FOUND: 'NOT_FOUND',

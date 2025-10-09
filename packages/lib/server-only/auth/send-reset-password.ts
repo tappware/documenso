@@ -38,8 +38,8 @@ export const sendResetPassword = async ({ userId }: SendResetPasswordOptions) =>
       name: user.name || '',
     },
     from: {
-      name: env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Doxigner',
-      address: env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@doxigner.com',
+      name: env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Doxsigner',
+      address: env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@Doxsigner.com',
     },
     subject: 'Password Reset Success!',
     html,

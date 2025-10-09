@@ -2,11 +2,11 @@ import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
 
 export const appMetaTags = (title?: string) => {
   const description =
-    'Join Doxigner, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+    'Join Doxsigner, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
 
   return [
     {
-      title: title ? `${title} - Doxigner` : 'Doxigner',
+      title: title ? `${title} - Doxsigner` : 'Doxsigner',
     },
     {
       name: 'description',
@@ -15,11 +15,11 @@ export const appMetaTags = (title?: string) => {
     {
       name: 'keywords',
       content:
-        'Doxigner, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+        'Doxsigner, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
     },
     {
       name: 'author',
-      content: 'Doxigner, Inc.',
+      content: 'Doxsigner, Inc.',
     },
     {
       name: 'robots',
@@ -27,7 +27,7 @@ export const appMetaTags = (title?: string) => {
     },
     {
       property: 'og:title',
-      content: 'Doxigner - The Open Source DocuSign Alternative',
+      content: 'Doxsigner - The Open Source DocuSign Alternative',
     },
     {
       property: 'og:description',
@@ -47,7 +47,7 @@ export const appMetaTags = (title?: string) => {
     },
     {
       name: 'twitter:site',
-      content: '@doxigner',
+      content: '@Doxsigner',
     },
     {
       name: 'twitter:description',
