@@ -6,7 +6,8 @@ export const appMetaTags = (title?: string) => {
 
   return [
     {
-      title: title ? `${title} - DoxSigner` : 'DoxSigner',
+      // title: title ? `${title} - DoxSigner` : 'DoxSigner',
+      title: title ? `DoxSigner - ${title}` : 'DoxSigner',
     },
     {
       name: 'description',
