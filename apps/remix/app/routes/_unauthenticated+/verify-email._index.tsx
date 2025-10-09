@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 
 import { Button } from '@documenso/ui/primitives/button';
 
+import { BrandingLogo } from '~/components/general/branding-logo';
 import { appMetaTags } from '~/utils/meta';
 
 export function meta() {
@@ -13,6 +14,9 @@ export function meta() {
 export default function EmailVerificationWithoutTokenPage() {
   return (
     <div className="w-screen max-w-lg px-4">
+      <div className="flex flex-col items-center">
+        <BrandingLogo className="mb-8 h-8" />
+      </div>
       <div className="flex w-full items-start">
         <div className="mr-4 mt-1 hidden md:block">
           <XCircle className="text-destructive h-10 w-10" strokeWidth={2} />

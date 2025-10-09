@@ -14,6 +14,8 @@ import { EMAIL_VERIFICATION_STATE } from '@documenso/lib/constants/email';
 import { Button } from '@documenso/ui/primitives/button';
 import { useToast } from '@documenso/ui/primitives/use-toast';
 
+import { BrandingLogo } from '~/components/general/branding-logo';
+
 import type { Route } from './+types/verify-email.$token';
 
 export const loader = ({ params }: Route.LoaderArgs) => {
@@ -135,6 +137,9 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
     ))
     .with(EMAIL_VERIFICATION_STATE.VERIFIED, () => (
       <div className="w-screen max-w-lg px-4">
+        <div className="flex flex-col items-center">
+          <BrandingLogo className="mb-8 h-8" />
+        </div>
         <div className="flex w-full items-start">
           <div className="mr-4 mt-1 hidden md:block">
             <CheckCircle2 className="h-10 w-10 text-green-500" strokeWidth={2} />
@@ -163,6 +168,9 @@ export default function VerifyEmailPage({ loaderData }: Route.ComponentProps) {
     ))
     .with(EMAIL_VERIFICATION_STATE.ALREADY_VERIFIED, () => (
       <div className="w-screen max-w-lg px-4">
+        <div className="flex flex-col items-center">
+          <BrandingLogo className="mb-8 h-8" />
+        </div>
         <div className="flex w-full items-start">
           <div className="mr-4 mt-1 hidden md:block">
             <CheckCircle2 className="h-10 w-10 text-green-500" strokeWidth={2} />

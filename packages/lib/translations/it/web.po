@@ -8614,10 +8614,6 @@ msgstr "Utente non trovato."
 msgid "User Organisations"
 msgstr "Organizzazioni utente"
 
-#: apps/remix/app/components/forms/signup.tsx
-msgid "User profiles are here!"
-msgstr "I profili utente sono qui!"
-
 #: apps/remix/app/components/general/menu-switcher.tsx
 msgid "User settings"
 msgstr "Impostazioni utente"

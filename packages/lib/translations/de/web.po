@@ -8598,10 +8598,6 @@ msgstr "Benutzer nicht gefunden."
 msgid "User Organisations"
 msgstr "Benutzerorganisationen"
 
-#: apps/remix/app/components/forms/signup.tsx
-msgid "User profiles are here!"
-msgstr "Benutzerprofile sind hier!"
-
 #: apps/remix/app/components/general/menu-switcher.tsx
 msgid "User settings"
 msgstr "Benutzereinstellungen"

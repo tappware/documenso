@@ -2,10 +2,14 @@ import { Trans } from '@lingui/react/macro';
 import { Mails } from 'lucide-react';
 
 import { SendConfirmationEmailForm } from '~/components/forms/send-confirmation-email';
+import { BrandingLogo } from '~/components/general/branding-logo';
 
 export default function UnverifiedAccount() {
   return (
     <div className="w-screen max-w-lg px-4">
+      <div className="flex flex-col items-center">
+        <BrandingLogo className="mb-8 h-8" />
+      </div>
       <div className="flex items-start">
         <div className="mr-4 mt-1 hidden md:block">
           <Mails className="text-primary h-10 w-10" strokeWidth={2} />

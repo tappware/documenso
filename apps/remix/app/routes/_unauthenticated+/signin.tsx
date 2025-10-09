@@ -10,6 +10,7 @@ import {
 import { env } from '@documenso/lib/utils/env';
 
 import { SignInForm } from '~/components/forms/signin';
+import { BrandingLogo } from '~/components/general/branding-logo';
 import { appMetaTags } from '~/utils/meta';
 
 import type { Route } from './+types/signin';
@@ -42,6 +43,9 @@ export default function SignIn({ loaderData }: Route.ComponentProps) {
 
   return (
     <div className="w-screen max-w-lg px-4">
+      <div className="flex flex-col items-center">
+        <BrandingLogo className="mb-8 h-8" />
+      </div>
       <div className="border-border dark:bg-background z-10 rounded-xl border bg-neutral-100 p-6">
         <h1 className="text-2xl font-semibold">
           <Trans>Sign in to your account</Trans>
