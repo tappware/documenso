@@ -15,9 +15,9 @@ export const API_V2_BETA_URL = '/api/v2-beta';
 
 export const SUPPORT_EMAIL = env('NEXT_PUBLIC_SUPPORT_EMAIL') ?? 'support@documenso.com';
 
-export const NEXT_APP_NAME = () => env('NEXT_APP_NAME') ?? 'Doxsigner';
+export const NEXT_APP_NAME = () => env('NEXT_APP_NAME') ?? 'DoxSigner';
 
-export const NEXT_APP_AUTHOR_NAME = () => env('NEXT_APP_AUTHOR_NAME') ?? 'Doxsigner Ltd';
+export const NEXT_APP_AUTHOR_NAME = () => env('NEXT_APP_AUTHOR_NAME') ?? 'DoxSigner Ltd';
 
 export const NEXT_APP_AUTHOR_ADDRESS = () =>
   env('NEXT_APP_AUTHOR_ADDRESS') ??

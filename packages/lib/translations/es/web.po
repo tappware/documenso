@@ -409,6 +409,16 @@ msgstr "{userName} vio el documento"
 msgid "{visibleRows, plural, one {Showing # result.} other {Showing # results.}}"
 msgstr "{visibleRows, plural, one {Mostrando # resultado.} other {Mostrando # resultados.}}"
 
+#: apps/remix/app/routes/_index.tsx
+#: apps/remix/app/routes/_index.tsx
+#: apps/remix/app/routes/_index.tsx
+msgid "/month"
+msgstr ""
+
+#: apps/remix/app/routes/_index.tsx
+msgid "© 2025 DoxSigner. All Rights Reserved."
+msgstr ""
+
 #. placeholder {0}: document.title
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
 msgid "<0>\"{0}\"</0>is no longer available to sign"
@@ -592,6 +602,10 @@ msgstr "404 Usuario no encontrado"
 msgid "404 Webhook not found"
 msgstr "404 Webhook no encontrado"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "5 Documents / Month"
+msgstr ""
+
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "5 documents a month"
 msgstr "5 documentos al mes"
@@ -599,6 +613,10 @@ msgstr "5 documentos al mes"
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "5 Documents a month"
 msgstr "5 Documentos al mes"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "50 Documents / Month"
+msgstr ""
 
 #: apps/remix/app/components/general/generic-error-layout.tsx
 msgid "500 Internal Server Error"
@@ -745,6 +763,10 @@ msgstr "Una URL única para identificar tu equipo"
 #: apps/remix/app/components/dialogs/team-email-add-dialog.tsx
 msgid "A verification email will be sent to the provided email."
 msgstr "Se enviará un correo electrónico de verificación a la dirección proporcionada."
+
+#: apps/remix/app/routes/_index.tsx
+msgid "About"
+msgstr ""
 
 #: apps/remix/app/components/general/organisations/organisation-invitations.tsx
 #: packages/email/templates/organisation-invite.tsx
@@ -1037,6 +1059,10 @@ msgstr "Añade estos registros DNS para verificar la propiedad de tu dominio"
 msgid "Add this URL to your provider's allowed redirect URIs"
 msgstr ""
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Add unlimited signatories with custom roles. Drag signature fields anywhere on your document. Set sequential or parallel signing workflows with complete control."
+msgstr ""
+
 #: apps/remix/app/components/forms/branding-preferences-form.tsx
 msgid "Additional brand information to display at the bottom of emails"
 msgstr "Información adicional de la marca para mostrar al final de los correos electrónicos"
@@ -1078,6 +1104,10 @@ msgstr "Configuraciones avanzadas"
 #: apps/remix/app/components/embed/authoring/configure-document-advanced-settings.tsx
 msgid "Advanced Settings"
 msgstr "Configuraciones avanzadas"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Advanced Workflows"
+msgstr ""
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "After signing a document electronically, you will be provided the opportunity to view, download, and print the document for your records. It is highly recommended that you retain a copy of all electronically signed documents for your personal records. We will also retain a copy of the signed document for our records however we may not be able to provide you with a copy of the signed document after a certain period of time."
@@ -1477,6 +1507,10 @@ msgstr "Cualquier fuente"
 msgid "Any Status"
 msgstr "Cualquier estado"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "API & Webhooks"
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings.tokens.tsx
 msgid "API Tokens"
 msgstr "Tokens de API"
@@ -1668,6 +1702,10 @@ msgstr "Avatar"
 msgid "Avatar Updated"
 msgstr "Avatar actualizado"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Avg. Sign Time"
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings._index.tsx
 msgid "Awaiting email confirmation"
 msgstr "Esperando confirmación de correo electrónico"
@@ -1780,6 +1818,10 @@ msgstr "Enviar plantilla masiva a través de CSV"
 #: apps/remix/app/components/dialogs/template-bulk-send-dialog.tsx
 msgid "Bulk Send via CSV"
 msgstr "Envío Masivo vía CSV"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Business"
+msgstr ""
 
 #: packages/email/templates/organisation-invite.tsx
 msgid "by <0>{senderName}</0>"
@@ -1978,6 +2020,10 @@ msgstr "Elige cómo el documento llegará a los destinatarios"
 msgid "Choose how to distribute your document to recipients. Email will send notifications, None will generate signing links for manual distribution."
 msgstr "Elija cómo distribuir su documento a los destinatarios. El correo electrónico enviará notificaciones, Ninguno generará enlaces de firma para la distribución manual."
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Choose Your Plan"
+msgstr ""
+
 #: apps/remix/app/components/general/document-signing/document-signing-auth-dialog.tsx
 msgid "Choose your preferred authentication method:"
 msgstr "Elige tu método de autenticación preferido:"
@@ -2068,6 +2114,10 @@ msgstr ""
 msgid "Close"
 msgstr "Cerrar"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Cloud storage • PDF certificates • Complete audit logs"
+msgstr ""
+
 #: apps/remix/app/components/embed/authoring/configure-document-advanced-settings.tsx
 msgid "Communication"
 msgstr "Comunicación"
@@ -2086,6 +2136,10 @@ msgstr "Compara todos los planes y características en detalle"
 #: apps/remix/app/components/embed/multisign/multi-sign-document-signing-view.tsx
 msgid "Complete"
 msgstr "Completo"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Complete and Secure Your Document"
+msgstr ""
 
 #: apps/remix/app/components/general/document-signing/document-signing-complete-dialog.tsx
 msgid "Complete Approval"
@@ -2241,6 +2295,10 @@ msgstr "Consentimiento para Transacciones Electrónicas"
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Contact Information"
 msgstr "Información de Contacto"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Contact Sales"
+msgstr ""
 
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "Contact sales here"
@@ -2636,9 +2694,17 @@ msgstr "Actualmente la marca solo se puede configurar para Equipos y planes supe
 msgid "Currently email domains can only be configured for Platform and above plans."
 msgstr "Actualmente los dominios de correo electrónico solo se pueden configurar para planes de Plataforma y superiores."
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Custom Branding"
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.groups._index.tsx
 msgid "Custom Organisation Groups"
 msgstr "Grupos de Organización Personalizados"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Custom signing order • Role-based permissions • Bulk actions"
+msgstr ""
 
 #: apps/remix/app/components/general/app-command-menu.tsx
 msgid "Dark Mode"
@@ -2671,6 +2737,10 @@ msgstr "Formato de fecha"
 #: packages/email/templates/organisation-invite.tsx
 msgid "Decline"
 msgstr "Rechazar"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Dedicated Support"
+msgstr ""
 
 #: apps/remix/app/components/forms/document-preferences-form.tsx
 msgid "Default Date Format"
@@ -2849,6 +2919,10 @@ msgstr "Eliminado"
 #: apps/remix/app/components/dialogs/account-delete-dialog.tsx
 msgid "Deleting account..."
 msgstr "Eliminando cuenta..."
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Demo"
+msgstr ""
 
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 msgid "Details"
@@ -3231,6 +3305,10 @@ msgstr ""
 msgid "Document Signed"
 msgstr "Documento firmado"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Document Signing"
+msgstr ""
+
 #: packages/lib/utils/document-audit-logs.ts
 msgctxt "Audit log format"
 msgid "Document signing auth updated"
@@ -3314,6 +3392,10 @@ msgstr "Documentos creados a partir de la plantilla"
 #: apps/remix/app/routes/_authenticated+/admin+/stats.tsx
 msgid "Documents Received"
 msgstr "Documentos recibidos"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Documents Signed"
+msgstr ""
 
 #: apps/remix/app/components/tables/inbox-table.tsx
 msgid "Documents that require your attention will appear here"
@@ -3584,6 +3666,10 @@ msgstr "Correo electrónico enviado"
 msgid "Email sent!"
 msgstr "¡Correo electrónico enviado!"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Email Support"
+msgstr ""
+
 #: apps/remix/app/components/dialogs/team-email-delete-dialog.tsx
 msgid "Email verification has been removed"
 msgstr "La verificación de correo electrónico ha sido eliminada"
@@ -3792,6 +3878,10 @@ msgstr "Error"
 msgid "Error uploading file"
 msgstr "Error al cargar el archivo"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "ESIGN & UETA compliant • Audit trail • Tamper-proof"
+msgstr ""
+
 #: apps/remix/app/components/dialogs/webhook-test-dialog.tsx
 msgid "Event Type"
 msgstr "Tipo de evento"
@@ -3824,6 +3914,10 @@ msgstr "Expirado"
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings.tokens.tsx
 msgid "Expires on {0}"
 msgstr "Expira el {0}"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Explore DoxSigner's powerful digital signing workflow through an interactive demo. Experience the future of document management."
+msgstr ""
 
 #: packages/ui/primitives/template-flow/add-template-settings.tsx
 #: packages/ui/primitives/document-flow/add-settings.tsx
@@ -3981,6 +4075,10 @@ msgstr "El tamaño del archivo excede el límite de {APP_DOCUMENT_UPLOAD_SIZE_LI
 msgid "Fill in the details to create a new subscription claim."
 msgstr "Rellena los detalles para crear una nueva reclamación de suscripción."
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Flexible plans for individuals and teams. Start free, upgrade anytime."
+msgstr ""
+
 #: apps/remix/app/components/dialogs/template-move-to-folder-dialog.tsx
 #: apps/remix/app/components/dialogs/document-move-to-folder-dialog.tsx
 msgid "Folder"
@@ -4055,6 +4153,10 @@ msgstr "Gratis"
 msgid "Free Signature"
 msgstr "Firma gratuita"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Free Tier"
+msgstr ""
+
 #: apps/remix/app/components/general/document-signing/document-signing-name-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-form.tsx
 #: apps/remix/app/components/general/direct-template/direct-template-signing-form.tsx
@@ -4083,6 +4185,15 @@ msgstr "Generar registros DKIM"
 #: packages/ui/primitives/document-flow/add-subject.tsx
 msgid "Generate Links"
 msgstr "Generar enlaces"
+
+#: apps/remix/app/routes/_index.tsx
+#: apps/remix/app/routes/_index.tsx
+msgid "Get Started"
+msgstr ""
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Get Started Free"
+msgstr ""
 
 #: packages/ui/components/document/document-global-auth-action-select.tsx
 msgid "Global recipient action authentication"
@@ -4279,6 +4390,10 @@ msgstr "Inicio (Sin Carpeta)"
 msgid "Horizontal"
 msgstr "Horizontal"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "How It Works"
+msgstr ""
+
 #: apps/remix/app/routes/_unauthenticated+/organisation.sso.confirmation.$token.tsx
 msgid "I agree to link my account with this organization"
 msgstr ""
@@ -4411,6 +4526,10 @@ msgstr "Insertado"
 msgid "Instance Stats"
 msgstr "Estadísticas de instancia"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Instantly receive your signed document with a complete audit trail. Download, archive, or share certificates. All documents are encrypted and stored with enterprise-grade security."
+msgstr ""
+
 #: apps/remix/app/components/forms/2fa/view-recovery-codes-dialog.tsx
 msgid "Invalid code. Please try again."
 msgstr "Código inválido. Por favor, intenta nuevamente."
@@ -4532,6 +4651,10 @@ msgstr "Actualmente no es tu turno para firmar. Recibirás un correo electrónic
 msgid "Join {organisationName} on Documenso"
 msgstr "Únete a {organisationName} en Documenso"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Join 25,000+ users signing documents daily"
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/delete-o.$orgUrl.support.tsx
 msgid "Join our community on <0>Discord</0> for community support and discussion."
 msgstr ""
@@ -4621,6 +4744,10 @@ msgstr "Legalidad de las Firmas Electrónicas"
 #: apps/remix/app/components/general/app-command-menu.tsx
 msgid "Light Mode"
 msgstr "Modo claro"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Lightning-fast upload • Multi-page support • 256-bit AES encryption"
+msgstr ""
 
 #: apps/remix/app/routes/_profile+/_layout.tsx
 msgid "Like to have your own public profile with agreements?"
@@ -4933,6 +5060,10 @@ msgstr "Usuarios activos mensuales: Usuarios que crearon al menos un documento"
 #: apps/remix/app/routes/_authenticated+/admin+/stats.tsx
 msgid "Monthly Active Users: Users that had at least one of their documents completed"
 msgstr "Usuarios activos mensuales: Usuarios que completaron al menos uno de sus documentos"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Most Popular"
+msgstr ""
 
 #: apps/remix/app/components/general/folder/folder-card.tsx
 #: apps/remix/app/components/dialogs/template-move-to-folder-dialog.tsx
@@ -5454,6 +5585,10 @@ msgstr "Anular la configuración de la organización"
 msgid "Owner"
 msgstr "Propietario"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Packages"
+msgstr ""
+
 #. placeholder {0}: table.getState().pagination.pageIndex + 1
 #. placeholder {1}: table.getPageCount() || 1
 #: packages/ui/primitives/data-table-pagination.tsx
@@ -5587,6 +5722,7 @@ msgstr "al mes"
 msgid "per year"
 msgstr "al año"
 
+#: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/components/tables/user-organisations-table.tsx
 msgid "Personal"
 msgstr "Personal"
@@ -5804,6 +5940,10 @@ msgstr "Vista previa"
 msgid "Preview and configure template."
 msgstr "Vista previa y configurar plantilla."
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Priority Support"
+msgstr ""
+
 #: apps/remix/app/components/tables/templates-table.tsx
 #: apps/remix/app/components/general/template/template-type.tsx
 msgid "Private"
@@ -5897,6 +6037,14 @@ msgstr "Lea la <0>divulgación de firma</0> completa."
 #: apps/remix/app/components/general/document/document-page-view-recipients.tsx
 msgid "Ready"
 msgstr "Listo"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Real-time Tracking"
+msgstr ""
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Real-time tracking • Auto reminders • Email notifications"
+msgstr ""
 
 #: apps/remix/app/routes/_internal+/[__htmltopdf]+/certificate.tsx
 msgid "Reason"
@@ -6340,6 +6488,14 @@ msgstr "Buscar idiomas..."
 msgid "Secret"
 msgstr "Secreto"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Secure • Fast • Paperless"
+msgstr ""
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Securely deliver documents with one click. Automated reminders keep everyone on track. Monitor opens, views, and completion status in real-time from your dashboard."
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/settings+/security._index.tsx
 #: apps/remix/app/components/general/settings-nav-mobile.tsx
 #: apps/remix/app/components/general/settings-nav-desktop.tsx
@@ -6349,6 +6505,10 @@ msgstr "Seguridad"
 #: apps/remix/app/routes/_authenticated+/settings+/security.activity.tsx
 msgid "Security activity"
 msgstr "Actividad de seguridad"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "See It In Action"
+msgstr ""
 
 #: apps/remix/app/components/general/document-signing/document-signing-dropdown-field.tsx
 #: packages/ui/primitives/document-flow/types.ts
@@ -6520,6 +6680,10 @@ msgstr "Enviar documentos en nombre del equipo usando la dirección de correo el
 msgid "Send documents to recipients immediately"
 msgstr "Enviar documentos a los destinatarios inmediatamente"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Send Documents via Email"
+msgstr ""
+
 #: apps/remix/app/components/forms/document-preferences-form.tsx
 msgid "Send on Behalf of Team"
 msgstr "Enviar en nombre del equipo"
@@ -6573,6 +6737,10 @@ msgstr "Las sesiones han sido revocadas"
 #: apps/remix/app/components/general/claim-account.tsx
 msgid "Set a password"
 msgstr "Establecer una contraseña"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Set the Signatories"
+msgstr ""
 
 #: apps/remix/app/components/embed/authoring/configure-document-view.tsx
 msgid "Set up your document properties and recipient information"
@@ -6689,10 +6857,16 @@ msgstr "Firmar documentos"
 msgid "Sign field"
 msgstr "Campo de firma"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Sign from anywhere, on any device — mobile, tablet, or desktop. Choose between typed, drawn, or uploaded signatures. Legally binding and compliant with global standards."
+msgstr ""
+
 #: apps/remix/app/components/forms/signup.tsx
 msgid "Sign Here"
 msgstr "Firmar aquí"
 
+#: apps/remix/app/routes/_index.tsx
+#: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/routes/_unauthenticated+/o.$orgUrl.signin.tsx
 #: apps/remix/app/components/forms/signin.tsx
 #: apps/remix/app/components/forms/signin.tsx
@@ -6711,6 +6885,10 @@ msgstr "Inicia sesión en tu cuenta"
 #: apps/remix/app/components/general/app-nav-mobile.tsx
 msgid "Sign Out"
 msgstr "Cerrar sesión"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Sign the Document Electronically"
+msgstr ""
 
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx
 #: apps/remix/app/components/embed/embed-direct-template-client-page.tsx
@@ -6844,6 +7022,14 @@ msgstr "Volumen de firmas"
 msgid "Signups are disabled."
 msgstr "Las inscripciones están deshabilitadas."
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Simple, secure, and efficient document signing in just 5 easy steps"
+msgstr ""
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Simply drag and drop your PDF documents or select from your device. Our advanced encryption ensures your files are secure from upload to signature completion."
+msgstr ""
+
 #. placeholder {0}: DateTime.fromJSDate(publicProfile.badge.since).toFormat('LLL ‘yy')
 #: apps/remix/app/routes/_profile+/p.$url.tsx
 msgid "Since {0}"
@@ -6976,6 +7162,10 @@ msgstr ""
 msgid "SSO"
 msgstr ""
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Start Free Trial"
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/admin+/_layout.tsx
 msgid "Stats"
 msgstr "Estadísticas"
@@ -6994,6 +7184,10 @@ msgstr "Estado"
 #: packages/ui/primitives/document-flow/document-flow-root.tsx
 msgid "Step <0>{step} of {maxStep}</0>"
 msgstr "Paso <0>{step} de {maxStep}</0>"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Steps"
+msgstr ""
 
 #: apps/remix/app/components/tables/admin-organisations-table.tsx
 msgid "Stripe"
@@ -7171,6 +7365,10 @@ msgstr "Administrador del equipo"
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.groups.$id.tsx
 msgid "Team Assignments"
 msgstr "Asignaciones de equipo"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Team Collaboration"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/admin+/organisations.$id.tsx
 #: apps/remix/app/components/forms/subscription-claim-form.tsx
@@ -7542,6 +7740,10 @@ msgstr "Se produjeron los siguientes errores:"
 #: packages/email/templates/team-delete.tsx
 msgid "The following team has been deleted. You will no longer be able to access this team and its documents"
 msgstr "El siguiente equipo ha sido eliminado. Ya no podrá acceder a este equipo y sus documentos"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "The Future of"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.sso.tsx
 msgid "The OpenID discovery endpoint URL for your provider"
@@ -8141,10 +8343,18 @@ msgstr "Total de firmantes que se registraron"
 msgid "Total Users"
 msgstr "Total de usuarios"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Transform how you sign documents. DoxSigner combines enterprise-grade security with elegant simplicity. Perfect for contracts, agreements, NDAs, and more — all 100% digital."
+msgstr ""
+
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings.webhooks.$id.tsx
 #: apps/remix/app/components/dialogs/webhook-create-dialog.tsx
 msgid "Triggers"
 msgstr "Desencadenadores"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Try Demo Now"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/settings+/security._index.tsx
 msgid "Two factor authentication"
@@ -8308,9 +8518,17 @@ msgstr ""
 msgid "Unlimited"
 msgstr "Ilimitado"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Unlimited Documents"
+msgstr ""
+
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "Unlimited documents, API and more"
 msgstr "Documentos ilimitados, API y más"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Unlimited Signatories"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/settings+/security.linked-accounts.tsx
 #: apps/remix/app/routes/_authenticated+/settings+/security.linked-accounts.tsx
@@ -8525,6 +8743,10 @@ msgstr "Cargar Documento Plantilla"
 msgid "Upload your brand logo (max 5MB, JPG, PNG, or WebP)"
 msgstr "Carga el logo de tu marca (máx 5MB, JPG, PNG o WebP)"
 
+#: apps/remix/app/routes/_index.tsx
+msgid "Upload Your Documents"
+msgstr ""
+
 #: apps/remix/app/components/general/template/template-page-view-information.tsx
 #: apps/remix/app/components/general/document/document-page-view-information.tsx
 msgid "Uploaded by"
@@ -8549,6 +8771,10 @@ msgstr "Cargando documento..."
 #: apps/remix/app/components/general/template/template-drop-zone-wrapper.tsx
 msgid "Uploading template..."
 msgstr "Subiendo plantilla..."
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Uptime SLA"
+msgstr ""
 
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id._index.tsx
 msgid "Use"
@@ -8839,6 +9065,10 @@ msgstr "¿Quieres tu propio perfil público?"
 #: packages/ui/primitives/document-flow/add-signers.tsx
 msgid "Warning: Assistant as last signer"
 msgstr "Advertencia: Asistente como último firmante"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Watch Demo"
+msgstr ""
 
 #: apps/remix/app/components/general/organisations/organisation-billing-portal-button.tsx
 #: apps/remix/app/components/general/organisations/organisation-billing-banner.tsx

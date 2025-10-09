@@ -1,7 +1,7 @@
 import { env } from '../utils/env';
 
 export const FROM_ADDRESS = env('NEXT_PRIVATE_SMTP_FROM_ADDRESS') || 'noreply@Doxsigner.com';
-export const FROM_NAME = env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'Doxsigner';
+export const FROM_NAME = env('NEXT_PRIVATE_SMTP_FROM_NAME') || 'DoxSigner';
 
 export const DOCUMENSO_INTERNAL_EMAIL = {
   name: FROM_NAME,
