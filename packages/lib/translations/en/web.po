@@ -51,6 +51,10 @@ msgstr "\"{placeholderEmail}\" on behalf of \"Team Name\" has invited you to sig
 msgid "\"Team Name\" has invited you to sign \"example document\"."
 msgstr "\"Team Name\" has invited you to sign \"example document\"."
 
+#: apps/remix/app/routes/contact.tsx
+msgid "(Optional)"
+msgstr "(Optional)"
+
 #: apps/remix/app/components/general/document-signing/document-signing-form.tsx
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx
 msgid "(You)"
@@ -413,6 +417,10 @@ msgstr "/month"
 #: apps/remix/app/routes/_index.tsx
 msgid "© 2025 DoxSigner. All Rights Reserved."
 msgstr "© 2025 DoxSigner. All Rights Reserved."
+
+#: apps/remix/app/routes/contact.tsx
+msgid "+1 (555) 123-4567"
+msgstr "+1 (555) 123-4567"
 
 #. placeholder {0}: document.title
 #: apps/remix/app/routes/_recipient+/sign.$token+/_index.tsx
@@ -840,6 +848,10 @@ msgstr "Account unlinked"
 msgid "Acknowledgment"
 msgstr "Acknowledgment"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Acme Inc."
+msgstr "Acme Inc."
+
 #: apps/remix/app/components/tables/settings-security-activity-table.tsx
 #: apps/remix/app/components/tables/settings-public-profile-templates-table.tsx
 #: apps/remix/app/components/tables/documents-table-action-dropdown.tsx
@@ -1100,6 +1112,10 @@ msgstr "Advanced settings"
 msgid "Advanced Settings"
 msgstr "Advanced Settings"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Advanced team collaboration features"
+msgstr "Advanced team collaboration features"
+
 #: apps/remix/app/routes/_index.tsx
 msgid "Advanced Workflows"
 msgstr "Advanced Workflows"
@@ -1148,6 +1164,10 @@ msgstr "All inserted signatures will be voided"
 #: apps/remix/app/components/dialogs/document-delete-dialog.tsx
 msgid "All recipients will be notified"
 msgstr "All recipients will be notified"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "All rights reserved."
+msgstr "All rights reserved."
 
 #: packages/email/template-components/template-document-cancel.tsx
 msgid "All signatures have been voided."
@@ -1506,6 +1526,10 @@ msgstr "Any Status"
 msgid "API & Webhooks"
 msgstr "API & Webhooks"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "API and webhook integration"
+msgstr "API and webhook integration"
+
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/settings.tokens.tsx
 msgid "API Tokens"
 msgstr "API Tokens"
@@ -1814,10 +1838,6 @@ msgstr "Bulk Send Template via CSV"
 msgid "Bulk Send via CSV"
 msgstr "Bulk Send via CSV"
 
-#: apps/remix/app/routes/_index.tsx
-msgid "Business"
-msgstr "Business"
-
 #: packages/email/templates/organisation-invite.tsx
 msgid "by <0>{senderName}</0>"
 msgstr "by <0>{senderName}</0>"
@@ -1855,6 +1875,10 @@ msgstr "By proceeding, you agree to our <0>Terms of Service</0> and <1>Privacy P
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "By using the electronic signature feature, you are consenting to conduct transactions and receive disclosures electronically. You acknowledge that your electronic signature on documents is binding and that you accept the terms outlined in the documents you are signing."
 msgstr "By using the electronic signature feature, you are consenting to conduct transactions and receive disclosures electronically. You acknowledge that your electronic signature on documents is binding and that you accept the terms outlined in the documents you are signing."
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Call Us"
+msgstr "Call Us"
 
 #: packages/ui/components/recipient/recipient-role-select.tsx
 msgid "Can prepare"
@@ -2117,6 +2141,10 @@ msgstr "Cloud storage • PDF certificates • Complete audit logs"
 msgid "Communication"
 msgstr "Communication"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Company Name"
+msgstr "Company Name"
+
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "Compare all plans and features in detail"
 msgstr "Compare all plans and features in detail"
@@ -2291,6 +2319,8 @@ msgstr "Consent to Electronic Transactions"
 msgid "Contact Information"
 msgstr "Contact Information"
 
+#: apps/remix/app/routes/contact.tsx
+#: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/routes/_index.tsx
 msgid "Contact Sales"
 msgstr "Contact Sales"
@@ -2696,6 +2726,10 @@ msgstr "Custom Branding"
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.groups._index.tsx
 msgid "Custom Organisation Groups"
 msgstr "Custom Organisation Groups"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Custom pricing and dedicated support for large organizations"
+msgstr "Custom pricing and dedicated support for large organizations"
 
 #: apps/remix/app/routes/_index.tsx
 msgid "Custom signing order • Role-based permissions • Bulk actions"
@@ -3309,6 +3343,11 @@ msgctxt "Audit log format"
 msgid "Document signing auth updated"
 msgstr "Document signing auth updated"
 
+#: packages/lib/server-only/document/send-completed-email.ts
+#: packages/lib/server-only/document/send-completed-email.ts
+msgid "Document Signing Complete!"
+msgstr "Document Signing Complete!"
+
 #: apps/remix/app/components/dialogs/document-delete-dialog.tsx
 msgid "Document signing process will be cancelled"
 msgstr "Document signing process will be cancelled"
@@ -3586,6 +3625,7 @@ msgstr "Email"
 msgid "Email address"
 msgstr "Email address"
 
+#: apps/remix/app/routes/contact.tsx
 #: apps/remix/app/components/forms/signup.tsx
 #: apps/remix/app/components/dialogs/organisation-email-create-dialog.tsx
 msgid "Email Address"
@@ -3664,6 +3704,10 @@ msgstr "Email sent!"
 #: apps/remix/app/routes/_index.tsx
 msgid "Email Support"
 msgstr "Email Support"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Email Us"
+msgstr "Email Us"
 
 #: apps/remix/app/components/dialogs/team-email-delete-dialog.tsx
 msgid "Email verification has been removed"
@@ -3794,9 +3838,14 @@ msgstr "Enter your password"
 msgid "Enter your text here"
 msgstr "Enter your text here"
 
+#: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/components/dialogs/organisation-create-dialog.tsx
 msgid "Enterprise"
 msgstr "Enterprise"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Enterprise Solutions"
+msgstr "Enterprise Solutions"
 
 #: apps/remix/app/routes/embed+/v1+/authoring+/template.edit.$id.tsx
 #: apps/remix/app/routes/embed+/v1+/authoring+/template.edit.$id.tsx
@@ -4152,6 +4201,7 @@ msgstr "Free Signature"
 msgid "Free Tier"
 msgstr "Free Tier"
 
+#: apps/remix/app/routes/contact.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-name-field.tsx
 #: apps/remix/app/components/general/document-signing/document-signing-form.tsx
 #: apps/remix/app/components/general/direct-template/direct-template-signing-form.tsx
@@ -4180,6 +4230,10 @@ msgstr "Generate DKIM Records"
 #: packages/ui/primitives/document-flow/add-subject.tsx
 msgid "Generate Links"
 msgstr "Generate Links"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Get in touch with our sales team to learn how Doxsigner can help your business streamline document signing and management."
+msgstr "Get in touch with our sales team to learn how Doxsigner can help your business streamline document signing and management."
 
 #: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/routes/_index.tsx
@@ -4642,6 +4696,14 @@ msgstr "It's currently not your turn to sign. Please check back soon as this doc
 msgid "It's currently not your turn to sign. You will receive an email with instructions once it's your turn to sign the document."
 msgstr "It's currently not your turn to sign. You will receive an email with instructions once it's your turn to sign the document."
 
+#: apps/remix/app/routes/contact.tsx
+msgid "John Doe"
+msgstr "John Doe"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "john@company.com"
+msgstr "john@company.com"
+
 #: packages/email/templates/organisation-invite.tsx
 msgid "Join {organisationName} on Documenso"
 msgstr "Join {organisationName} on Documenso"
@@ -5020,6 +5082,7 @@ msgstr "Member Since"
 msgid "Members"
 msgstr "Members"
 
+#: apps/remix/app/routes/contact.tsx
 #: apps/remix/app/components/forms/support-ticket-form.tsx
 #: packages/ui/primitives/template-flow/add-template-settings.tsx
 #: packages/ui/primitives/document-flow/add-subject.tsx
@@ -5029,6 +5092,10 @@ msgstr "Message"
 #: apps/remix/app/components/embed/authoring/configure-document-advanced-settings.tsx
 msgid "Message <0>(Optional)</0>"
 msgstr "Message <0>(Optional)</0>"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Message sent!"
+msgstr "Message sent!"
 
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/number-field.tsx
 msgid "Min"
@@ -5161,6 +5228,10 @@ msgstr "Never expire"
 #: apps/remix/app/components/forms/password.tsx
 msgid "New Password"
 msgstr "New Password"
+
+#: packages/email/templates/contact-sales.tsx
+msgid "New Sales Inquiry from {name}"
+msgstr "New Sales Inquiry from {name}"
 
 #: apps/remix/app/components/dialogs/template-create-dialog.tsx
 #: apps/remix/app/components/dialogs/template-create-dialog.tsx
@@ -5417,6 +5488,10 @@ msgstr "Only PDF files are allowed"
 #: apps/remix/app/components/general/generic-error-layout.tsx
 msgid "Oops! Something went wrong."
 msgstr "Oops! Something went wrong."
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Open-source and self-hostable"
+msgstr "Open-source and self-hostable"
 
 #: apps/remix/app/components/general/stack-avatars-with-tooltip.tsx
 msgid "Opened"
@@ -5717,7 +5792,6 @@ msgstr "per month"
 msgid "per year"
 msgstr "per year"
 
-#: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/components/tables/user-organisations-table.tsx
 msgid "Personal"
 msgstr "Personal"
@@ -5733,6 +5807,10 @@ msgstr "Personal Account"
 #: apps/remix/app/components/general/menu-switcher.tsx
 msgid "Personal Inbox"
 msgstr "Personal Inbox"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Phone Number"
+msgstr "Phone Number"
 
 #: packages/ui/primitives/document-flow/field-items-advanced-settings/checkbox-field.tsx
 msgid "Pick a number"
@@ -5902,6 +5980,10 @@ msgstr "Please try again later."
 msgid "Please try again or contact our support."
 msgstr "Please try again or contact our support."
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Please try again or email us directly at support@doxsigner.com"
+msgstr "Please try again or email us directly at support@doxsigner.com"
+
 #. placeholder {0}: `'${_(deleteMessage)}'`
 #: apps/remix/app/components/dialogs/document-delete-dialog.tsx
 msgid "Please type {0} to confirm"
@@ -5951,6 +6033,10 @@ msgstr "Private templates can only be modified and viewed by you."
 #: apps/remix/app/components/dialogs/assistant-confirmation-dialog.tsx
 msgid "Proceed"
 msgstr "Proceed"
+
+#: apps/remix/app/routes/_index.tsx
+msgid "Professional"
+msgstr "Professional"
 
 #: apps/remix/app/routes/_authenticated+/settings+/profile.tsx
 #: apps/remix/app/components/general/settings-nav-mobile.tsx
@@ -6487,6 +6573,10 @@ msgstr "Secret"
 msgid "Secure • Fast • Paperless"
 msgstr "Secure • Fast • Paperless"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Secure and compliant document signing"
+msgstr "Secure and compliant document signing"
+
 #: apps/remix/app/routes/_index.tsx
 msgid "Securely deliver documents with one click. Automated reminders keep everyone on track. Monitor opens, views, and completion status in real-time from your dashboard."
 msgstr "Securely deliver documents with one click. Automated reminders keep everyone on track. Monitor opens, views, and completion status in real-time from your dashboard."
@@ -6679,6 +6769,10 @@ msgstr "Send documents to recipients immediately"
 msgid "Send Documents via Email"
 msgstr "Send Documents via Email"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Send Message"
+msgstr "Send Message"
+
 #: apps/remix/app/components/forms/document-preferences-form.tsx
 msgid "Send on Behalf of Team"
 msgstr "Send on Behalf of Team"
@@ -6702,6 +6796,10 @@ msgstr "Send reminder"
 #: apps/remix/app/components/dialogs/webhook-test-dialog.tsx
 msgid "Send Test Webhook"
 msgstr "Send Test Webhook"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Send us a message"
+msgstr "Send us a message"
 
 #: apps/remix/app/components/tables/inbox-table.tsx
 #: apps/remix/app/components/tables/documents-table.tsx
@@ -6860,6 +6958,7 @@ msgstr "Sign from anywhere, on any device — mobile, tablet, or desktop. Choose
 msgid "Sign Here"
 msgstr "Sign Here"
 
+#: apps/remix/app/routes/contact.tsx
 #: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/routes/_index.tsx
 #: apps/remix/app/routes/_unauthenticated+/o.$orgUrl.signin.tsx
@@ -6894,6 +6993,10 @@ msgstr "Sign the document to complete the process."
 #: apps/remix/app/components/general/document-signing/document-signing-auth-page.tsx
 msgid "Sign up"
 msgstr "Sign up"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Sign Up"
+msgstr "Sign Up"
 
 #: apps/remix/app/components/forms/signup.tsx
 msgid "Sign Up with Google"
@@ -6980,11 +7083,6 @@ msgstr "Signing Certificate"
 msgid "Signing certificate provided by"
 msgstr "Signing certificate provided by"
 
-#: packages/lib/server-only/document/send-completed-email.ts
-#: packages/lib/server-only/document/send-completed-email.ts
-msgid "Document Signing Complete!"
-msgstr "Document Signing Complete!"
-
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx
 msgid "Signing for"
 msgstr "Signing for"
@@ -7043,6 +7141,7 @@ msgstr "Site Settings"
 msgid "Some signers have not been assigned a signature field. Please assign at least 1 signature field to each signer before proceeding."
 msgstr "Some signers have not been assigned a signature field. Please assign at least 1 signature field to each signer before proceeding."
 
+#: apps/remix/app/routes/contact.tsx
 #: apps/remix/app/routes/_unauthenticated+/verify-email.$token.tsx
 #: apps/remix/app/routes/_unauthenticated+/verify-email.$token.tsx
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.branding.tsx
@@ -7156,10 +7255,6 @@ msgstr "Space-separated list of domains. Leave empty to allow all domains."
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings._layout.tsx
 msgid "SSO"
 msgstr "SSO"
-
-#: apps/remix/app/routes/_index.tsx
-msgid "Start Free Trial"
-msgstr "Start Free Trial"
 
 #: apps/remix/app/routes/_authenticated+/admin+/_layout.tsx
 msgid "Stats"
@@ -7490,6 +7585,10 @@ msgstr "Teams help you organise your work and collaborate with others. Create yo
 msgid "Teams that this organisation group is currently assigned to"
 msgstr "Teams that this organisation group is currently assigned to"
 
+#: apps/remix/app/routes/contact.tsx
+msgid "Tell us about your needs and how we can help..."
+msgstr "Tell us about your needs and how we can help..."
+
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id.edit.tsx
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates.$id._index.tsx
 #: apps/remix/app/components/general/template/template-page-view-documents-table.tsx
@@ -7599,6 +7698,14 @@ msgstr "Text Color"
 #: apps/remix/app/components/embed/multisign/multi-sign-document-list.tsx
 msgid "Thank you for completing the signing process."
 msgstr "Thank you for completing the signing process."
+
+#: packages/email/templates/contact-sales.tsx
+msgid "Thank you for contacting Doxsigner Sales"
+msgstr "Thank you for contacting Doxsigner Sales"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Thank you for contacting us. We'll get back to you within 24 hours."
+msgstr "Thank you for contacting us. We'll get back to you within 24 hours."
 
 #. placeholder {0}: NEXT_APP_NAME()
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
@@ -9361,6 +9468,10 @@ msgstr "We won't send anything to notify recipients."
 msgid "We'll get back to you as soon as possible via email."
 msgstr "We'll get back to you as soon as possible via email."
 
+#: apps/remix/app/routes/contact.tsx
+msgid "We'll respond within 24 hours"
+msgstr "We'll respond within 24 hours"
+
 #: apps/remix/app/routes/_authenticated+/t.$teamUrl+/templates._index.tsx
 #: apps/remix/app/components/tables/documents-table-empty-state.tsx
 msgid "We're all empty"
@@ -9420,8 +9531,8 @@ msgid "Welcome to {organisationName}"
 msgstr "Welcome to {organisationName}"
 
 #: packages/email/template-components/template-confirmation-email.tsx
-msgid "Welcome to Doxsigner!"
-msgstr "Welcome to Doxsigner!"
+msgid "Welcome to DoxSigner!"
+msgstr "Welcome to DoxSigner!"
 
 #: apps/remix/app/routes/_authenticated+/o.$orgUrl.settings.sso.tsx
 msgid "Well-known URL is required"
@@ -9468,6 +9579,10 @@ msgstr "Whitelabeling, unlimited members and more"
 #: apps/remix/app/components/dialogs/document-resend-dialog.tsx
 msgid "Who do you want to remind?"
 msgstr "Who do you want to remind?"
+
+#: apps/remix/app/routes/contact.tsx
+msgid "Why Choose Doxsigner?"
+msgstr "Why Choose Doxsigner?"
 
 #: apps/remix/app/routes/_unauthenticated+/articles.signature-disclosure.tsx
 msgid "Withdrawing Consent"

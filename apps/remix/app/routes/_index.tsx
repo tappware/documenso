@@ -478,14 +478,14 @@ export default function Index() {
               </Button>
             </div>
 
-            {/* Personal - Popular */}
+            {/* Professional - Popular */}
             <div className="group relative overflow-hidden rounded-2xl border-2 border-blue-500 bg-white p-8 shadow-2xl transition-all hover:scale-105 dark:bg-gray-950">
               <div className="absolute inset-0 -z-10 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10" />
               <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-3 py-1 text-xs font-bold text-white">
                 <Trans>Most Popular</Trans>
               </div>
               <h3 className="mb-2 text-2xl font-bold">
-                <Trans>Personal</Trans>
+                <Trans>Professional</Trans>
               </h3>
               <div className="mb-6 flex items-baseline gap-2">
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-5xl font-extrabold text-transparent">
@@ -533,17 +533,17 @@ export default function Index() {
                 asChild
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 font-semibold shadow-lg hover:shadow-blue-500/50"
               >
-                <Link to="/signup">
-                  <Trans>Start Free Trial</Trans>
+                <Link to="/contact">
+                  <Trans>Contact Sales</Trans>
                 </Link>
               </Button>
             </div>
 
-            {/* Business */}
+            {/* Enterprise */}
             <div className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg transition-all hover:scale-105 hover:shadow-2xl dark:border-gray-800 dark:bg-gray-950">
               <div className="absolute inset-0 -z-10 bg-gradient-to-br from-purple-50 to-transparent opacity-0 transition-opacity group-hover:opacity-100 dark:from-purple-950/50" />
               <h3 className="mb-2 text-2xl font-bold">
-                <Trans>Business</Trans>
+                <Trans>Enterprise</Trans>
               </h3>
               <div className="mb-6 flex items-baseline gap-2">
                 <span className="text-5xl font-extrabold">$49</span>
@@ -586,7 +586,7 @@ export default function Index() {
                 </li>
               </ul>
               <Button asChild className="w-full" variant="outline">
-                <Link to="/signup">
+                <Link to="/contact">
                   <Trans>Contact Sales</Trans>
                 </Link>
               </Button>
