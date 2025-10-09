@@ -6982,8 +6982,8 @@ msgstr "Signing certificate provided by"
 
 #: packages/lib/server-only/document/send-completed-email.ts
 #: packages/lib/server-only/document/send-completed-email.ts
-msgid "Signing Complete!"
-msgstr "Signing Complete!"
+msgid "Document Signing Complete!"
+msgstr "Document Signing Complete!"
 
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx
 msgid "Signing for"

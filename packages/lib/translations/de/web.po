@@ -6987,7 +6987,7 @@ msgstr "Unterzeichnungszertifikat bereitgestellt von"
 
 #: packages/lib/server-only/document/send-completed-email.ts
 #: packages/lib/server-only/document/send-completed-email.ts
-msgid "Signing Complete!"
+msgid "Document Signing Complete!"
 msgstr "Unterzeichnung abgeschlossen!"
 
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx

@@ -5991,7 +5991,7 @@ msgstr "서명 인증서 제공자"
 
 #: packages/lib/server-only/document/send-completed-email.ts
 #: packages/lib/server-only/document/send-completed-email.ts
-msgid "Signing Complete!"
+msgid "Document Signing Complete!"
 msgstr "서명이 완료되었습니다！"
 
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx

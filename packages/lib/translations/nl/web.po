@@ -6353,7 +6353,7 @@ msgstr "Ondertekeningscertificaat verstrekt door"
 
 #: packages/lib/server-only/document/send-completed-email.ts
 #: packages/lib/server-only/document/send-completed-email.ts
-msgid "Signing Complete!"
+msgid "Document Signing Complete!"
 msgstr "Ondertekening Voltooid!"
 
 #: apps/remix/app/components/embed/embed-document-signing-page.tsx

@@ -124,7 +124,7 @@ export const sendCompletedEmail = async ({ documentId, requestMetadata }: SendDo
       ],
       from: senderEmail,
       replyTo: replyToEmail,
-      subject: i18n._(msg`Signing Complete!`),
+      subject: i18n._(msg`Document Signing Complete!`),
       html,
       text,
       attachments: [
@@ -200,7 +200,7 @@ export const sendCompletedEmail = async ({ documentId, requestMetadata }: SendDo
         subject:
           isDirectTemplate && document.documentMeta?.subject
             ? renderCustomEmailTemplate(document.documentMeta.subject, customEmailTemplate)
-            : i18n._(msg`Signing Complete!`),
+            : i18n._(msg`Document Signing Complete!`),
         html,
         text,
         attachments: [
