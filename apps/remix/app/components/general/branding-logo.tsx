@@ -4,14 +4,7 @@ export type LogoProps = SVGAttributes<SVGSVGElement>;
 
 export const BrandingLogo = ({ ...props }: LogoProps) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="1680"
-      height="240"
-      viewBox="0 0 444.49999 63.5"
-      version="1.1"
-      {...props}
-    >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444.49999 63.5" version="1.1" {...props}>
       <g>
         <g transform="matrix(1.0922851,0,0,1.0922851,-6.1011302,-2.0737776)">
           <path
