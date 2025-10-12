@@ -2,7 +2,7 @@ import { NEXT_PUBLIC_WEBAPP_URL } from '@documenso/lib/constants/app';
 
 export const appMetaTags = (title?: string) => {
   const description =
-    'Join DoxSigner, the open signing infrastructure, and get a 10x better signing experience. Pricing starts at $30/mo. forever! Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable. Support our mission and become a part of our open-source community.';
+    'Join DoxSigner, the open signing infrastructure, and get a 10x better signing experience. Sign in now and enjoy a faster, smarter, and more beautiful document signing process. Integrates with your favorite tools, customizable, and expandable.';
 
   return [
     {
@@ -16,7 +16,7 @@ export const appMetaTags = (title?: string) => {
     {
       name: 'keywords',
       content:
-        'DoxSigner, open source, DocuSign alternative, document signing, open signing infrastructure, open-source community, fast signing, beautiful signing, smart templates',
+        'DoxSigner, document signing, open signing infrastructure, fast signing, beautiful signing, smart templates',
     },
     {
       name: 'author',
@@ -28,7 +28,7 @@ export const appMetaTags = (title?: string) => {
     },
     {
       property: 'og:title',
-      content: 'DoxSigner - The Open Source DocuSign Alternative',
+      content: 'DoxSigner - Document Signing Platform',
     },
     {
       property: 'og:description',
